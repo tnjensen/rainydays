@@ -1,15 +1,96 @@
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) 
-{
-    .img-responsive url()
-
+body {
+  margin: 0;
+  padding: 0;
 }
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) { ... }
+.wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.site-logo {
+  margin: 25px 0 40px 30px;
+  max-width: 400px;
+}
+.site-header {
+  display: grid;
+  grid-template-columns: 500px repeat(2, 1fr);
+  justify-content: space-around;
+  background-color: antiquewhite;
+}
+.header-content {
+  margin-bottom: 10px;
+}
+.header-aside {
+  margin-left: auto;
+}
+.site-branding {
+  padding: 10px;
+}
+.search {
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.main-nav {
+  display: inline-flex;
+  margin: 25px 0 0 0;
+}
+.main-nav ul {
+  list-style-type: none;
+  margin-left: -28px;
+}
+.main-nav ul li {
+  display: inline-flex;
+}
+.main-nav ul li a {
+  text-decoration: none;
+}
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
+i {
+  margin-right: 5px;
+}
+.secondary-nav {
+}
+.secondary-nav ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.secondary-nav ul li {
+  display: inline-flex;
+}
+.secondary-nav ul li a {
+  margin-right: 5px;
+  text-decoration: none;
+}
+.secondary-nav ul li a:hover {
+  text-decoration: underline;
+}
+/* Mobile devices (468px and down) */
+@media only screen and (max-width: 468px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .site-logo {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+  }
+}
+/* Small devices (tablets, between 469px and 768px) */
+@media only screen and (min-width: 469px) and (max-width: 800px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
+  .site-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  .header-aside{
+    margin-left: auto;
+  }
+}
