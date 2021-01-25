@@ -1,52 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Our durable and comfortable raincoats are suitable for a range of different weather types ensuring your comfort whatever adventure you go on.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainy Days</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <script src="https://kit.fontawesome.com/9e2630f249.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="site-header">
-        <img
-          src="images/RainyDays_Logo.png"
-          alt="Rainy Days Logo"
-          class="site-logo"
-        />
-        <div class="header-content">   
-            <div class="site-branding">
-                <h1>All-purpose raincoats for men and women</h1>
-            </div>   
-            
-            <nav class="main-nav">
-                <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">MEN'S</a></li>
-                <li><a href="#">WOMEN'S</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>   
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://kit.fontawesome.com/9e2630f249.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+  <header>
+    <div class="site-header">
+    <a href="index.html">
+      <img src="images/RainyDays_Logo_medium.png" class="site-logo" alt="Rainy Days Logo"
+    /></a>
+    <div class="header-content">   
+        <div class="site-branding">
+            <h1>All-purpose raincoats for men and women</h1>
+        </div>   
+    </div> 
+    <div class="header-aside">
+        <div class="secondary-nav">
+            <ul> 
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#""><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </div>
+    </div> 
+    <div class="menu-wrap">
+      <label for="checkbox">
+        <p class="menu-icon">☰</p>
+     </label>     
+        <input type="checkbox" id="checkbox">
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="men.html">MEN'S</a></li>
+            <li><a href="women.html">WOMEN'S</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+          <p>
+            Search:
+            <input class="search-field" />
+          </p>
         </div> 
-        <div class="header-aside">
-            <div class="secondary-nav">
-                <ul> 
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#""><i class="fas fa-shopping-cart"></i></a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <p>
-                  Search:
-                  <input class="search-field" />
-                </p>
-              </div> 
-            </div>         
-      </header>
+    </div><!--menu-wrap-->
+  </div><!--site-header-->
+ </header>
+ <main>
+  <div class="main-content">
+   <h1>For your active lifestyle</h1>
+  <div class="hero">
+    <img src="images/pexels-vlad-bagacian-2819551_resized.jpg" alt="Picture of man wearing raincoat overlooking mountains" width="500px">
+  </div>
+   <p>Affordable and durable jackets for a range of 
+    weather conditions, designed to keep you 
+    comfortable on every adventure. </p> 
+  </div>
+</main>
+</div><!--wrapper-->
+ <footer class="footer">
+   <div class="footer-content">
+    <div class="footer-category">
+      CONTACT
     </div>
-  </body>
+    <div>
+      +44 345 678 903
+      <p>rainydays@mail.com</p>
+      <p>Find a Store</p>
+    </div>
+    <div class="footer-category">
+      SERVICES
+    </div>
+    <div>
+      Ordering & Payment
+      <p>Shipping</p>
+      <p>Returns</p>
+    </div>
+    <div class="footer-category">
+      INFORMATION
+    </div>
+    <div>
+      Privacy Policy
+      <p>Terms & Conditions</p>
+    </div>
+    <div class="footer-nav">
+      <ul> 
+        <li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+    </ul>
+    </div><!--footer-nav-->
+  </div><!--footer-content-->
+ </footer>
+ <script src="js/script.js"></script>
+</body>
 </html>
