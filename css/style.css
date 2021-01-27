@@ -597,7 +597,7 @@ input:focus:-moz-placeholder{
     background-color: #1fa9cc;
     color: #0b3f4d;
   }
-  .arrow-down-login{
+  .arrow-up-login{
     display: none;
     width: 0;
     height: 0;
@@ -608,7 +608,7 @@ input:focus:-moz-placeholder{
     right:170px;
     top: 35px;
   }
-  .arrow-down-register{
+  .arrow-up-register{
     display: none;
     width: 0;
     height: 0;
@@ -619,7 +619,7 @@ input:focus:-moz-placeholder{
     right:110px;
     top: 35px;
   }
-  .arrow-down-cart{
+  .arrow-up-cart{
     display: none;
     width: 0;
     height: 0;
