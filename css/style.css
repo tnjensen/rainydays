@@ -18,6 +18,7 @@ body {
   padding: 0;
   background-color: #efefef;
   font-family: Montserrat, Verdana, sans-serif;
+  font-size: .9rem;
 }
 .site-header {
   display: flex;
@@ -26,6 +27,7 @@ body {
   justify-content: space-between;
   background-color: #1fa9cc;
   color: #0b3f4d;
+  font-size: .8rem;
 }
 h1,
 h2 {
@@ -33,7 +35,8 @@ h2 {
 }
 .site-logo {
   margin: 25px 0 40px 30px;
-  max-width: 400px;
+  max-width: 200px;
+  margin-bottom: 0;
 }
 
 .header-content {
@@ -47,7 +50,7 @@ h2 {
   margin: 10px 0 5px 25px;
   font-style: italic;
 }
-.arrow-down-login{
+.arrow-up-login{
   display: none;
   width: 0;
   height: 0;
@@ -55,10 +58,10 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right:165px;
-  top: 370px;
+  right:130px;
+  top: 230px;
 }
-.arrow-down-register{
+.arrow-up-register{
   display: none;
   width: 0;
   height: 0;
@@ -66,10 +69,10 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right:100px;
-  top: 370px;
+  right:80px;
+  top: 230px;
 }
-.arrow-down-cart{
+.arrow-up-cart{
   display: none;
   width: 0;
   height: 0;
@@ -78,7 +81,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right:24px;
-  top: 370px;
+  top: 230px;
 }
 .login-form{
   display: none;
@@ -88,7 +91,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 40px;
-  top: 209px;
+  top: 70px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -105,7 +108,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 30px;
-  top: 192px;
+  top: 52px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -130,7 +133,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 243px;
+  top: 100px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -177,7 +180,7 @@ input[type="submit"]:hover{
   color: #0b3f4d;
 }
 .menu-icon {
-  font-size: 2.4em;
+  font-size: 2.1em;
   color: #ffffff;
   line-height: 50px;
   margin: 0 10px;
@@ -185,7 +188,7 @@ input[type="submit"]:hover{
 nav {
   position: absolute;
   background-color: #15748c;
-  top: 330px;
+  top: 340px;
   left: 0;
   width: 100%;
 }
@@ -263,13 +266,15 @@ input:focus:-moz-placeholder{
 .search-btn{
   padding: 1px;
   background-color: #15748C;
-  border: 1px solid #fffefe;
-  
 }
+
 .fa-search{
   color: #fffefe;
   margin-left: 10px;
   padding: 3px;
+}
+.fa-search:hover{
+  color: #0b3f4d;
 }
 .secondary-nav {
   margin-right: 10px;
@@ -290,7 +295,6 @@ input:focus:-moz-placeholder{
   text-decoration: underline;
   color: #401021;
 }
-
 .wrapper {
   min-height: calc(100vh-130px);
   max-width: 1160px;
@@ -302,9 +306,11 @@ input:focus:-moz-placeholder{
   flex-wrap: wrap;
   align-content: center;
   margin: 15px 25px;
+  font-size: .9rem;
 }
 .main-content img {
   margin: 25px 0;
+  max-width: 250px;
 }
 .footer {
   background-color: #0b3f4d;
@@ -345,9 +351,9 @@ input:focus:-moz-placeholder{
   text-decoration: underline;
   color: #c8bb21;
 }
-@media screen and (min-width: 480px) and (max-width: 799px) {
+@media screen and (min-width: 400px) and (max-width: 599px) {
   body {
-    font-size: 0.9rem;
+    font-size: .9rem;
   }
   .site-logo {
     margin: 25px 0 20px 30px;
@@ -356,7 +362,7 @@ input:focus:-moz-placeholder{
     justify-content: center;
     max-width: 300px;
   }
-  .arrow-down-login{
+  .arrow-up-login{
     display: none;
     width: 0;
     height: 0;
@@ -364,10 +370,10 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
-    right:150px;
-    top: 310px;
+    right:135px;
+    top: 300px;
   }
-  .arrow-down-register{
+  .arrow-up-register{
     display: none;
     width: 0;
     height: 0;
@@ -375,10 +381,10 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
-    right:90px;
-    top: 310px;
+    right:80px;
+    top: 300px;
   }
-  .arrow-down-cart{
+  .arrow-up-cart{
     display: none;
     width: 0;
     height: 0;
@@ -387,7 +393,7 @@ input:focus:-moz-placeholder{
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
     right:24px;
-    top: 310px;
+    top: 300px;
   }
   .login-form{
     display: none;
@@ -397,7 +403,7 @@ input:focus:-moz-placeholder{
     height: auto;
     background-color: #fffefe;
     right: 40px;
-    top: 150px;
+    top: 140px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -414,7 +420,7 @@ input:focus:-moz-placeholder{
     height: auto;
     background-color: #fffefe;
     right: 30px;
-    top: 132px;
+    top: 122px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -462,7 +468,7 @@ input:focus:-moz-placeholder{
     height: auto;
     background-color: #fffefe;
     right: 22px;
-    top: 183px;
+    top: 173px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -470,15 +476,34 @@ input:focus:-moz-placeholder{
     top: 400px;
   }
   .main-content img {
-    width: 400px;
+    width: 300px;
     margin: 25px 0 25px;
+  }
+  .footer-content {
+    margin: 25px 25px 0 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    color: #fff;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 799px) {
+  body{
+    font-size: .9rem;
+  }
+ 
+  .site-logo {
+    margin: 25px 0 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+  }
   nav {
     top: 360px;
   }
-  .arrow-down-login{
+  .arrow-up-login{
     display: none;
     width: 0;
     height: 0;
@@ -486,10 +511,10 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
-    right:150px;
+    right:130px;
     top: 270px;
   }
-  .arrow-down-register{
+  .arrow-up-register{
     display: none;
     width: 0;
     height: 0;
@@ -497,10 +522,10 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
-    right:90px;
+    right:80px;
     top: 270px;
   }
-  .arrow-down-cart{
+  .arrow-up-cart{
     display: none;
     width: 0;
     height: 0;
@@ -588,8 +613,31 @@ input:focus:-moz-placeholder{
   .login-form a:hover{
     text-decoration: underline;
   }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 15px 25px;
+    font-size: .9rem;
+  }
+  .main-content img {
+    margin: 25px 0;
+    max-width: 400px;
+  }
 }
 @media screen and (min-width: 800px) {
+  body {
+    font-size: 1.1rem;
+  }
+  .site-logo {
+    margin: 25px 0 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin-bottom: 25px;
+  }
   .site-header {
     display: grid;
     grid-template-columns: 450px repeat(2, 1fr);
@@ -605,7 +653,7 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
-    right:170px;
+    right:145px;
     top: 35px;
   }
   .arrow-up-register{
@@ -616,7 +664,7 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
-    right:110px;
+    right:90px;
     top: 35px;
   }
   .arrow-up-cart{
@@ -627,7 +675,7 @@ input:focus:-moz-placeholder{
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
-    right:40px;
+    right:35px;
     top: 35px;
   }
   .login-form{
@@ -677,7 +725,7 @@ input:focus:-moz-placeholder{
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0b3f4d;
-    font-size: 1rem;
+    
   }
   .cart-form p{
     margin: 10px 0;
@@ -746,10 +794,10 @@ input:focus:-moz-placeholder{
   }
   .search-field{
     max-width:120px;
-    font-size: 1.1rem;
+    font-size: .9rem;
   }
   .search-btn{
-    padding: 3px;
+    padding: 1px;
     background-color: #15748C;
     border: 2px solid #fffefe;
     
@@ -757,9 +805,13 @@ input:focus:-moz-placeholder{
   .fa-search{
     color: #fffefe;
     margin-left: 10px;
-    padding: 3px;
+    padding: 2px;
+    margin-top: 1px;
   }  
-  
+  .main-content img {
+    margin: 25px 0;
+    max-width: 500px;
+  }
   footer {
     height: 130px;
   }
@@ -769,7 +821,7 @@ input:focus:-moz-placeholder{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #fff;
   }
   .footer-category {

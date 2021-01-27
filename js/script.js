@@ -10,9 +10,6 @@ $(document).ready(function(){
   var arrowLogin = $(".arrow-up-login");
   var arrowRegister = $(".arrow-up-register");
   var arrowCart = $(".arrow-up-cart");
-  var arrowLogin = $(".arrow-down-login");
-  var arrowRegister = $(".arrow-down-register");
-  var arrowCart = $(".arrow-down-cart");
   var login = $(".login-form");
   var register = $(".register-form");
   var cart = $(".cart-form");
