@@ -266,12 +266,14 @@ input:focus:-moz-placeholder{
 .search-btn{
   padding: 1px;
   background-color: #15748C;
+  border: none;
 }
 
 .fa-search{
   color: #fffefe;
   margin-left: 10px;
   padding: 3px;
+  
 }
 .fa-search:hover{
   color: #0b3f4d;
