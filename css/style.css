@@ -356,7 +356,7 @@ input:focus:-moz-placeholder{
     justify-content: center;
     max-width: 300px;
   }
-  .arrow-up-login{
+  .arrow-down-login{
     display: none;
     width: 0;
     height: 0;
@@ -367,7 +367,7 @@ input:focus:-moz-placeholder{
     right:150px;
     top: 310px;
   }
-  .arrow-up-register{
+  .arrow-down-register{
     display: none;
     width: 0;
     height: 0;
@@ -378,7 +378,7 @@ input:focus:-moz-placeholder{
     right:90px;
     top: 310px;
   }
-  .arrow-up-cart{
+  .arrow-down-cart{
     display: none;
     width: 0;
     height: 0;
@@ -478,7 +478,7 @@ input:focus:-moz-placeholder{
   nav {
     top: 360px;
   }
-  .arrow-up-login{
+  .arrow-down-login{
     display: none;
     width: 0;
     height: 0;
@@ -489,7 +489,7 @@ input:focus:-moz-placeholder{
     right:150px;
     top: 270px;
   }
-  .arrow-up-register{
+  .arrow-down-register{
     display: none;
     width: 0;
     height: 0;
@@ -500,7 +500,7 @@ input:focus:-moz-placeholder{
     right:90px;
     top: 270px;
   }
-  .arrow-up-cart{
+  .arrow-down-cart{
     display: none;
     width: 0;
     height: 0;
@@ -597,7 +597,7 @@ input:focus:-moz-placeholder{
     background-color: #1fa9cc;
     color: #0b3f4d;
   }
-  .arrow-up-login{
+  .arrow-down-login{
     display: none;
     width: 0;
     height: 0;
@@ -608,7 +608,7 @@ input:focus:-moz-placeholder{
     right:170px;
     top: 35px;
   }
-  .arrow-up-register{
+  .arrow-down-register{
     display: none;
     width: 0;
     height: 0;
@@ -619,7 +619,7 @@ input:focus:-moz-placeholder{
     right:110px;
     top: 35px;
   }
-  .arrow-up-cart{
+  .arrow-down-cart{
     display: none;
     width: 0;
     height: 0;
