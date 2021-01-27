@@ -47,7 +47,7 @@ h2 {
   margin: 10px 0 5px 25px;
   font-style: italic;
 }
-.arrow-up-login{
+.arrow-down-login{
   display: none;
   width: 0;
   height: 0;
@@ -58,7 +58,7 @@ h2 {
   right:165px;
   top: 370px;
 }
-.arrow-up-register{
+.arrow-down-register{
   display: none;
   width: 0;
   height: 0;
@@ -69,7 +69,7 @@ h2 {
   right:100px;
   top: 370px;
 }
-.arrow-up-cart{
+.arrow-down-cart{
   display: none;
   width: 0;
   height: 0;
@@ -114,29 +114,6 @@ h2 {
   margin: 0 auto;
   color: #0b3f4d;
 }
-input[type="text"],
-input[type="password"]{
-  margin:4px 0 7px 0;
-  height: 25px;
-  border: 0;
-  outline: none;
-  box-shadow: inset 0 0 10px #eee;
-  border-radius: 5px;
-  font-style: oblique;
-  opacity: .7;
-}
-input[type="submit"] {
-  width: 75px;
-  height: 25px;
-  color: #401021;
-  margin: 10px 0 15px 0;
-  border-radius: 5px;
-  background-color: #c8bb21;
-}
-input[type="submit"]:hover{
-  background-color:#401021;
-  color: #efefef;
-}
 .login-form a{
   color: #401021;
   font-size: .9rem;
@@ -160,6 +137,30 @@ input[type="submit"]:hover{
 .cart-form p{
   margin: 10px 0;
 }
+input[type="text"],
+input[type="password"]{
+  margin:4px 0 7px 0;
+  height: 25px;
+  border: 0;
+  outline: none;
+  box-shadow: inset 0 0 10px #eee;
+  border-radius: 5px;
+  font-style: oblique;
+  opacity: .7;
+}
+input[type="submit"] {
+  width: 75px;
+  height: 25px;
+  color: #401021;
+  margin: 10px 0 15px 0;
+  border-radius: 5px;
+  background-color: #c8bb21;
+}
+input[type="submit"]:hover{
+  background-color:#401021;
+  color: #efefef;
+}
+
 .menu-wrap {
   height: 70px;
   background-color: #15748c;
@@ -544,6 +545,18 @@ input:focus:-moz-placeholder{
     margin: 0 auto;
     color: #0b3f4d;
   }
+  .cart-form {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 22px;
+    top: 140px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
   input[type="text"],
   input[type="password"]{
     margin:4px 0 7px 0;
@@ -574,18 +587,6 @@ input:focus:-moz-placeholder{
   }
   .login-form a:hover{
     text-decoration: underline;
-  }
-  .cart-form {
-    display: none;
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
-    right: 22px;
-    top: 140px;
-    border-radius: 5px;
-    font-size: 1rem;
   }
 }
 @media screen and (min-width: 800px) {
@@ -665,6 +666,22 @@ input:focus:-moz-placeholder{
     margin: 0 auto;
     color: #0b3f4d;
   }
+  .cart-form {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 20px;
+    top: 49px;
+    border-radius: 5px;
+    border-bottom: 2px solid #0b3f4d;
+    font-size: 1rem;
+  }
+  .cart-form p{
+    margin: 10px 0;
+  }
   input[type="text"],
   input[type="password"]{
     margin:4px 0 7px 0;
@@ -696,22 +713,7 @@ input:focus:-moz-placeholder{
   .login-form a:hover{
     text-decoration: underline;
   }
-  .cart-form {
-    display: none;
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
-    right: 20px;
-    top: 49px;
-    border-radius: 5px;
-    border-bottom: 2px solid #0b3f4d;
-    font-size: 1rem;
-  }
-  .cart-form p{
-    margin: 10px 0;
-  }
+  
   .secondary-nav {
     margin-right: 20px;
   }
