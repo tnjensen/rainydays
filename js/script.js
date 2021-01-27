@@ -5,12 +5,3 @@ for (var i = 1; i < document.links.length; i++) {
         document.links[i].className = 'active';
     }
 }
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
