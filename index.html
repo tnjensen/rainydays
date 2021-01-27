@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
 <script src="https://kit.fontawesome.com/9e2630f249.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <header>
@@ -19,10 +20,59 @@
     <div class="header-aside">
         <div class="secondary-nav">
             <ul> 
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Sign Up</a></li>
-                <li><a href="#""><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="#" id="login">Login</a></li>
+                <li><a href="#" id="register">Register</a></li>
+                <li><a href="#" id="cart">Cart <i class="fas fa-shopping-cart"></i></a></li>
             </ul>
+        </div><!--secondary-nav-->
+        <div class="arrow-up-login"></div>
+        <div class="arrow-up-register"></div>
+        <div class="arrow-up-cart"></div>
+    </div><!--header-aside-->
+    <div class="login-form" id="login">
+      <form>
+        
+        <div>
+          <input type="text" placeholder="Your Email" required />
+        </div>
+       
+        <div>
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div>
+          <input type="submit" value="Log In" />
+        </div>
+        <div>
+          <a href="#">Lost your password ?</a>
+        </div>
+      </form>
+    </div> 
+    <div class="register-form" id="register">
+      <form>
+       
+        <div>
+          <input type="text" placeholder="Email Address" required />
+        </div>
+ 
+        <div>
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div>
+          <input type="password" placeholder="Confirm Password" required />
+        </div>
+        <div>
+          <input type="submit" value="Sign Up" />
+        </div>
+      </form>
+    </div>
+    <div class="cart-form" id="cart">
+    <label>CART ITEMS</label>
+    <hr>
+        <div>
+          <p>0 Items</p>
+        </div>
+        <div>
+          <input type="submit" value="View Cart" />
         </div>
     </div> 
     <div class="menu-wrap">

@@ -47,6 +47,119 @@ h2 {
   margin: 10px 0 5px 25px;
   font-style: italic;
 }
+.arrow-up-login{
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 15px solid #fff;
+  right:165px;
+  top: 370px;
+}
+.arrow-up-register{
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 15px solid #fff;
+  right:100px;
+  top: 370px;
+}
+.arrow-up-cart{
+  display: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 15px solid #fff;
+  right:24px;
+  top: 370px;
+}
+.login-form{
+  display: none;
+  padding: 10px;
+  position: absolute;
+  width: 220px;
+  height: auto;
+  background-color: #fffefe;
+  right: 40px;
+  top: 209px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.login-form form{
+  width: 240px;
+  margin: 0 auto;
+  color: #0b3f4d;
+}
+.register-form{
+  display: none;
+  padding: 10px;
+  position: absolute;
+  width: 220px;
+  height: auto;
+  background-color: #fffefe;
+  right: 30px;
+  top: 192px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.register-form form{
+  width: 240px;
+  margin: 0 auto;
+  color: #0b3f4d;
+}
+input[type="text"],
+input[type="password"]{
+  margin:4px 0 7px 0;
+  height: 25px;
+  border: 0;
+  outline: none;
+  box-shadow: inset 0 0 10px #eee;
+  border-radius: 5px;
+  font-style: oblique;
+  opacity: .7;
+}
+input[type="submit"] {
+  width: 75px;
+  height: 25px;
+  color: #401021;
+  margin: 10px 0 15px 0;
+  border-radius: 5px;
+  background-color: #c8bb21;
+}
+input[type="submit"]:hover{
+  background-color:#401021;
+  color: #efefef;
+}
+.login-form a{
+  color: #401021;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.login-form a:hover{
+  text-decoration: underline;
+}
+.cart-form {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  width: 220px;
+  height: auto;
+  background-color: #fffefe;
+  right: 22px;
+  top: 243px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.cart-form p{
+  margin: 10px 0;
+}
 .menu-wrap {
   height: 70px;
   background-color: #15748c;
@@ -111,32 +224,55 @@ nav ul li a:focus {
 i {
   margin-right: 7px;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color:#0b3f4d;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:#0b3f4d;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:#0b3f4d;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color:#0b3f4d;
+}
+input:focus::-webkit-input-placeholder{
+  color: transparent!important;
+}
+input:focus::-moz-placeholder{
+  color: transparent!important;
+}
+input:focus:-moz-placeholder{
+  color: transparent!important;
+}
 .search {
   margin-left: auto;
   margin-right: 20px;
   margin-top: 10px;
 }
-.search ul {
+.search ul{
   list-style-type: none;
   display: inline-flex;
   margin-top: 10px;
 }
-.search-field {
+.search-field{
   padding: 2px;
-  max-width: 90px;
+  max-width:90px;
 }
-.search-btn {
+.search-btn{
   padding: 1px;
-  background-color: #15748c;
+  background-color: #15748C;
   border: 1px solid #fffefe;
+  
 }
-.fa-search {
+.fa-search{
   color: #fffefe;
   margin-left: 10px;
   padding: 3px;
 }
 .secondary-nav {
   margin-right: 10px;
+  
 }
 .secondary-nav ul {
   list-style-type: none;
@@ -153,6 +289,7 @@ i {
   text-decoration: underline;
   color: #401021;
 }
+
 .wrapper {
   min-height: calc(100vh-130px);
   max-width: 1160px;
@@ -218,6 +355,116 @@ i {
     justify-content: center;
     max-width: 300px;
   }
+  .arrow-up-login{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #fff;
+    right:150px;
+    top: 310px;
+  }
+  .arrow-up-register{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #fff;
+    right:90px;
+    top: 310px;
+  }
+  .arrow-up-cart{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #fff;
+    right:24px;
+    top: 310px;
+  }
+  .login-form{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 40px;
+    top: 150px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .login-form form{
+    width: 240px;
+    margin: 0 auto;
+    color: #0b3f4d;
+  }
+  .register-form{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 30px;
+    top: 132px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .register-form form{
+    width: 240px;
+    margin: 0 auto;
+    color: #0b3f4d;
+  }
+  input[type="text"],
+  input[type="password"]{
+    margin:4px 0 7px 0;
+    height: 25px;
+    border: 0;
+    outline: none;
+    box-shadow: inset 0 0 10px #eee;
+    border-radius: 5px;
+    font-style: oblique;
+    opacity: .7;
+  }
+  input[type="submit"] {
+    width: 75px;
+    height: 25px;
+    color: #401021;
+    margin: 10px 0 15px 0;
+    border-radius: 5px;
+    background-color: #c8bb21;
+  }
+  input[type="submit"]:hover{
+    background-color:#401021;
+    color: #efefef;
+  }
+  .login-form a{
+    color: #401021;
+    font-size: .9rem;
+    text-decoration: none;
+  }
+  .login-form a:hover{
+    text-decoration: underline;
+  }
+  .cart-form {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 22px;
+    top: 183px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
   nav {
     top: 400px;
   }
@@ -230,6 +477,116 @@ i {
   nav {
     top: 360px;
   }
+  .arrow-up-login{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #fff;
+    right:150px;
+    top: 270px;
+  }
+  .arrow-up-register{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #fff;
+    right:90px;
+    top: 270px;
+  }
+  .arrow-up-cart{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid #fff;
+    right:24px;
+    top: 270px;
+  }
+  .login-form{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 40px;
+    top: 109px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .login-form form{
+    width: 240px;
+    margin: 0 auto;
+    color: #0b3f4d;
+  }
+  .register-form{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 30px;
+    top: 92px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  .register-form form{
+    width: 240px;
+    margin: 0 auto;
+    color: #0b3f4d;
+  }
+  input[type="text"],
+  input[type="password"]{
+    margin:4px 0 7px 0;
+    height: 25px;
+    border: 0;
+    outline: none;
+    box-shadow: inset 0 0 10px #eee;
+    border-radius: 5px;
+    font-style: oblique;
+    opacity: .7;
+  }
+  input[type="submit"] {
+    width: 75px;
+    height: 25px;
+    color: #401021;
+    margin: 10px 0 15px 0;
+    border-radius: 5px;
+    background-color: #c8bb21;
+  }
+  input[type="submit"]:hover{
+    background-color:#401021;
+    color: #efefef;
+  }
+  .login-form a{
+    color: #401021;
+    font-size: .9rem;
+    text-decoration: none;
+  }
+  .login-form a:hover{
+    text-decoration: underline;
+  }
+  .cart-form {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 22px;
+    top: 140px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 800px) {
   .site-header {
@@ -239,12 +596,132 @@ i {
     background-color: #1fa9cc;
     color: #0b3f4d;
   }
+  .arrow-up-login{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #fff;
+    right:170px;
+    top: 35px;
+  }
+  .arrow-up-register{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #fff;
+    right:110px;
+    top: 35px;
+  }
+  .arrow-up-cart{
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 15px solid #fff;
+    right:40px;
+    top: 35px;
+  }
+  .login-form{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 40px;
+    top: 49px;
+    border-radius: 5px;
+    border-bottom: 2px solid #0b3f4d;
+    font-size: 1rem;
+  }
+  .login-form form{
+    width: 240px;
+    margin: 0 auto;
+    color: #0b3f4d;
+  }
+  .register-form{
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 30px;
+    top: 49px;
+    border-radius: 5px;
+    border-bottom: 2px solid #0b3f4d;
+    font-size: 1rem;
+  }
+  .register-form form{
+    width: 240px;
+    margin: 0 auto;
+    color: #0b3f4d;
+  }
+  input[type="text"],
+  input[type="password"]{
+    margin:4px 0 7px 0;
+    height: 25px;
+    border: 0;
+    outline: none;
+    box-shadow: inset 0 0 10px #eee;
+    border-radius: 5px;
+    font-style: oblique;
+    opacity: .7;
+  }
+  input[type="submit"] {
+    width: 75px;
+    height: 25px;
+    color: #401021;
+    margin: 10px 0 15px 0;
+    border-radius: 5px;
+    background-color: #c8bb21;
+  }
+  input[type="submit"]:hover{
+    background-color:#401021;
+    color: #efefef;
+  }
+  .login-form a{
+    color: #401021;
+    font-size: .9rem;
+    text-decoration: none;
+  }
+  .login-form a:hover{
+    text-decoration: underline;
+  }
+  .cart-form {
+    display: none;
+    padding: 10px;
+    position: absolute;
+    width: 220px;
+    height: auto;
+    background-color: #fffefe;
+    right: 20px;
+    top: 49px;
+    border-radius: 5px;
+    border-bottom: 2px solid #0b3f4d;
+    font-size: 1rem;
+  }
+  .cart-form p{
+    margin: 10px 0;
+  }
+  .secondary-nav {
+    margin-right: 20px;
+  }
   .menu-icon {
     display: none;
   }
   .menu.wrap {
     display: flex;
     grid-template-columns: 450px repeat(2, 1fr);
+   
   }
   nav {
     position: relative;
@@ -263,25 +740,24 @@ i {
   .search {
     margin-left: auto;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 8px;
   }
-  .search-field {
-    max-width: 120px;
+  .search-field{
+    max-width:120px;
     font-size: 1.1rem;
   }
-  .search-btn {
+  .search-btn{
     padding: 3px;
-    background-color: #15748c;
+    background-color: #15748C;
     border: 2px solid #fffefe;
+    
   }
-  .fa-search {
+  .fa-search{
     color: #fffefe;
     margin-left: 10px;
     padding: 3px;
-  }
-  .secondary-nav {
-    margin-right: 20px;
-  }
+  }  
+  
   footer {
     height: 130px;
   }
