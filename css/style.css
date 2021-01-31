@@ -219,6 +219,7 @@ nav {
   top: 330px;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 nav ul {
   list-style-type: none;
@@ -407,6 +408,16 @@ input:focus:-moz-placeholder{
 }
 .checkout{
   margin-top: 10px;
+}
+.about-list{
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-item{
+  margin: 10px 0;
+  max-width: 250px;
 }
 .footer {
   background-color: #0b3f4d;
@@ -982,6 +993,12 @@ input:focus:-moz-placeholder{
    .checkout-list-item{
      padding-left: 20px;
    }
+   .about-list{
+    display: inline-flex;
+  }
+  .about-item{
+    margin: 0 20px;
+  }
   footer {
     height: 130px;
   }
