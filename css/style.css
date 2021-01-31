@@ -368,11 +368,13 @@ input:focus:-moz-placeholder{
   color: #c8bb21;
 }
 .addcart{
-  padding:15px 20px;
+  margin: 20px;
+  padding:16px 20px;
 }
 .detail-counter-aside{
   display: inline-flex;   
 }
+
 .counter-minus-btn, .counter-plus-btn{
   background-color: #0b3f4d;
   color: #fffefe;
@@ -992,10 +994,22 @@ hr{
    font-size: 1rem;
   }
   .product-list-item img{
-    max-width: 250px;
+    max-width: 220px;
   }
   .product-detail{
     padding: 20px;
+  }
+  .product-detail-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+  }
+  .detail-aside{
+    margin-top: 18px;
+  }
+  .addcart{
+    margin: 10px 0;
+    padding:16px 20px;
   }
   .product-detail-item img{
     max-width: 400px;
