@@ -295,7 +295,7 @@ input:focus:-moz-placeholder{
 .search-btn{
   background-color: #0b3f4d;
   padding:  2px;
-  border: none;
+  border: 0;
 }
 
 .fa-search{
@@ -965,9 +965,9 @@ hr{
     font-size: .9rem;
   }
   .search-btn{
-    padding: 1px;
-    background-color: #15748C;
-    border: 2px solid #fffefe;
+    padding: 3px;
+    background-color:#0b3f4d;
+    border: 0;
     
   }
   .fa-search{
