@@ -179,10 +179,19 @@ input#city{
 input#zip{
   width: 50px;
 }
+select#country{
+  font-size: 1rem;
+  border: 0;
+  margin-top: 5px;
+  width: 150px;
+}
 .zip{
   margin-left: 75px;
 }
-
+.expiration input{
+  width: 40px;
+  border: none;
+}
 .menu-wrap {
   height: 70px;
   background-color: #15748c;
@@ -397,7 +406,7 @@ input:focus:-moz-placeholder{
   padding: 3px 0 5px 0;
 }
 .checkout{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .footer {
   background-color: #0b3f4d;
