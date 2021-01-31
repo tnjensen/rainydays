@@ -116,43 +116,61 @@
     </header>
     <div class="wrapper">
       <main>
-          <div class="main-content">
-            <h1>Women's jackets</h1>
-            <div class="product-list">            
-            <div class="product-list-item">
-             <img src="images/raincoat_female_large.png" alt="Illustration of male raincoat">
-         <h2>Women's rain coat</h2>
-         <h3>Title</h3>
-         <p>Rating, store</p>
-         <h3>$ Price</h3>
-         <a href="detail-women.html"><button class="btn-viewcoat">See It</button></a>
-            </div>
-        <div class="product-list-item">
-            <img src="images/raincoat_female_large.png" alt="Illustration of male raincoat">
-        <h2>Women's rain coat</h2>
-        <h3>Title</h3>
-        <p>Rating, store</p>
-        <h3>$ Price</h3>
-        <button class="btn-viewcoat">See It</button>
-        </div>
-        <div class="product-list-item">
-        <img src="images/raincoat_female_large.png" alt="Illustration of male raincoat">
-        <h2>Women's rain coat</h2>
-        <h3>Title</h3>
-        <p>Rating, store</p>
-        <h3>$ Price</h3>
-        <button class="btn-viewcoat">See It</button>
-        </div>
-        <div class="product-list-item">
-             <img src="images/raincoat_female_large.png" alt="Illustration of male raincoat">
-         <h2>Women's rain coat</h2>
-         <h3>Title</h3>
-         <p>Rating, store</p>
-         <h3>$ Price</h3>
-         <button class="btn-viewcoat">See It</button>
-        </div><!--product-list-item-->
-        </div><!--product-list--> 
-    </div><!--main-content-->
+        <div class="main-content">
+          <h1>Checkout Page</h1>
+          <div class="checkout-list">            
+            <div class="checkout-list-item">
+            <h2>Billing Info</h2>
+            <div class="billing-form" id="billing">
+            <form>
+                <label>Full Name</label>
+              <div> 
+                <input type="text" placeholder="Full Name" required />
+              </div>
+              <label>Address</label>
+              <div>
+                <input type="text" placeholder="Address" required />
+              </div>
+              <label>City</label>
+              <label class="zip">Zip</label>
+              <div>
+                <input type="text" id="city" placeholder="City" required />
+                <input type="text" id="zip" placeholder="Zip" required />
+              </div>
+              <label>Country</label>
+              <div>
+                <input type="select" value="United States" />
+              </div>
+              <a href="#"><button class="btn-viewcoat cancel">Cancel</button></a>
+            </form>
+          </div>
+        </div><!--checkout-list-item-->
+        <div class="checkout-list-item">
+        <h2>Credit Card Info</h2>
+        <div class="credit-card-form" id="credit-card">
+            <form>
+                <label for="ccn">Card number</label>
+              <div>
+                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx" required />
+              </div>
+              <label>Cardholder Name</label>
+              <div>
+                <input type="text" placeholder="Cardholder Name" required />
+              </div>
+              <label>Expiry Date</label>
+              <div>
+                <input type="text" placeholder="Date/Year" required />
+              </div>
+              <label>CCV</label>
+              <div>
+                <input type="text" placeholder="CCV Code" required />
+              </div>
+            </form>
+          </div>
+        <a href="confirm-order.html"><button class="btn-viewcoat checkout">Place Order</button></a>
+        </div><!--checkout-list-item-->
+        </div><!--checkout-list-->
+        </div><!--main-content-->
       </main>
     </div>
     <!--wrapper-->
