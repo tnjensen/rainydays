@@ -419,6 +419,14 @@ input:focus:-moz-placeholder{
   margin: 10px 0;
   max-width: 250px;
 }
+.contact-details p{
+  font-weight: 600;
+  padding: 5px 0;
+}
+hr{
+  border: 1px solid #0b3f4d;
+  margin: 10px 0;
+}
 .footer {
   background-color: #0b3f4d;
 }
