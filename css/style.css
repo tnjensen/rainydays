@@ -326,7 +326,7 @@ input:focus:-moz-placeholder{
   color: #401021;
 }
 .wrapper {
-  min-height: calc(100vh-130px);
+  min-height: calc(100vh - 130px);
   max-width: 1160px;
   margin: 0 auto;
 }
@@ -442,6 +442,10 @@ hr{
 }
 .contact-location{
   margin: 20px 0;
+}
+
+.confirm-order button{
+  margin-right: 10px;
 }
 .footer {
   background-color: #0b3f4d;
@@ -806,6 +810,11 @@ hr{
     width: 350px !important;
     height: 350px !important;
   }
+  .confirm-order button{
+    padding: 7px 12px;
+    margin-right: 13px;
+  }
+  
 }
 @media screen and (min-width: 800px) {
   body {
@@ -1046,6 +1055,10 @@ hr{
   #embedmap{
     width: 450px !important;
     height: 450px !important;
+  }
+  .confirm-order button{
+    margin-right: 20px;
+    padding: 10px 15px;
   }
   footer {
     height: 130px;

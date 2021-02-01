@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e2630f249.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <a href="index.html">
+          <img
+            src="images/RainyDays_Logo_medium.png"
+            class="site-logo"
+            alt="Rainy Days Logo"
+        /></a>
+        <div class="header-content">
+          <div class="site-branding">
+            <h1>All-purpose raincoats for men and women</h1>
+          </div>
+        </div>
+        <div class="header-aside">
+          <div class="secondary-nav">
+            <ul>
+              <li><a href="#" id="login">Login</a></li>
+              <li><a href="#" id="register">Register</a></li>
+              <li>
+                <a href="#" id="cart"
+                  >Cart <i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!--secondary-nav-->
+          <div class="arrow-up-login"></div>
+          <div class="arrow-up-register"></div>
+          <div class="arrow-up-cart"></div>
+        </div>
+        <!--header-aside-->
+        <div class="login-form" id="login">
+          <form>
+            <div>
+              <input type="text" placeholder="Your Email" required />
+            </div>
+
+            <div>
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div>
+              <input type="submit" value="Log In" />
+            </div>
+            <div>
+              <a href="#">Lost your password ?</a>
+            </div>
+          </form>
+        </div>
+        <div class="register-form" id="register">
+          <form>
+            <div>
+              <input type="text" placeholder="Email Address" required />
+            </div>
+
+            <div>
+              <input type="password" placeholder="Password" required />
+            </div>
+            <div>
+              <input type="password" placeholder="Confirm Password" required />
+            </div>
+            <div>
+              <input type="submit" value="Sign Up" />
+            </div>
+          </form>
+        </div>
+        <div class="cart-form" id="cart">
+          <label>CART ITEMS</label>
+          <hr />
+          <div>
+            <p>0 Items</p>
+          </div>
+          <div>
+            <input type="submit" value="View Cart" />
+          </div>
+        </div>
+        <div class="menu-wrap">
+          <label for="checkbox">
+            <p class="menu-icon">☰</p>
+          </label>
+          <input type="checkbox" id="checkbox" />
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="men.html">MEN'S</a></li>
+              <li><a href="women.html">WOMEN'S</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <ul>
+              <li><input class="search-field" placeholder="Search..." /></li>
+              <li>
+                <button class="search-btn">
+                  <a href="search.html"><i class="fas fa-search"></i></a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--menu-wrap-->
+      </div>
+      <!--site-header-->
+    </header>
+    <div class="wrapper">
+      <main>
+        <div class="main-content">
+          <h1 id="h1-home">Thanks for your order !</h1>
+          <div class="confirm-order">
+            <a href="view-order.html">
+              <button class="btn-viewcoat cancel">Order Summary</button></a>
+          <a href="men.html"><button class="btn-viewcoat checkout">Continue Shopping</button></a>
+        </div>
+      </main>
+    </div>
+    <!--wrapper-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-category">CONTACT</div>
+        <div>
+          +44 345 678 903
+          <p>rainydays@mail.com</p>
+          <p>Find a Store</p>
+        </div>
+        <div class="footer-category">SERVICES</div>
+        <div>
+          Ordering & Payment
+          <p>Shipping</p>
+          <p>Returns</p>
+        </div>
+        <div class="footer-category">INFORMATION</div>
+        <div>
+          Privacy Policy
+          <p>Terms & Conditions</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <!--footer-nav-->
+      </div>
+      <!--footer-content-->
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
