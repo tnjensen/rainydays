@@ -136,7 +136,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 95px;
+  top: 85px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -506,7 +506,7 @@ hr {
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
     right: 135px;
-    top: 250px;
+    top: 270px;
   }
   .arrow-up-register {
     display: none;
@@ -517,7 +517,7 @@ hr {
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
     right: 80px;
-    top: 250px;
+    top: 270px;
   }
   .arrow-up-cart {
     display: none;
@@ -528,7 +528,7 @@ hr {
     border-right: 20px solid transparent;
     border-top: 15px solid #fff;
     right: 24px;
-    top: 250px;
+    top: 270px;
   }
   .login-form {
     display: none;
@@ -538,7 +538,7 @@ hr {
     height: auto;
     background-color: #fffefe;
     right: 40px;
-    top: 90px;
+    top: 110px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -555,7 +555,7 @@ hr {
     height: auto;
     background-color: #fffefe;
     right: 30px;
-    top: 72px;
+    top: 92px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -603,7 +603,7 @@ hr {
     height: auto;
     background-color: #fffefe;
     right: 22px;
-    top: 120px;
+    top: 130px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -734,7 +734,7 @@ hr {
     height: auto;
     background-color: #fffefe;
     right: 22px;
-    top: 140px;
+    top: 130px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -784,7 +784,7 @@ hr {
     max-width: 90px;
     font-size: 0.8rem;
   }
-  .search-btn{
+  .search-btn {
     padding: 3px;
   }
   .main-content {
@@ -854,6 +854,7 @@ hr {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
+    border-top: none;
     right: 145px;
     top: 35px;
   }
@@ -865,6 +866,7 @@ hr {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
+    border-top: none;
     right: 90px;
     top: 35px;
   }
@@ -876,6 +878,7 @@ hr {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
+    border-top: none;
     right: 35px;
     top: 35px;
   }
@@ -922,7 +925,7 @@ hr {
     width: 220px;
     height: auto;
     background-color: #fffefe;
-    right: 20px;
+    right: 35px;
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0b3f4d;
