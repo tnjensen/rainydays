@@ -62,7 +62,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 130px;
-  top: 225px;
+  top: 245px;
 }
 .arrow-up-register {
   display: none;
@@ -73,7 +73,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 80px;
-  top: 225px;
+  top: 245px;
 }
 .arrow-up-cart {
   display: none;
@@ -84,7 +84,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 24px;
-  top: 225px;
+  top: 245px;
 }
 .login-form {
   display: none;
@@ -94,7 +94,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 40px;
-  top: 65px;
+  top: 85px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -111,7 +111,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 30px;
-  top: 47px;
+  top: 67px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -136,7 +136,7 @@ h2 {
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 85px;
+  top: 105px;
   border-radius: 5px;
   font-size: 1rem;
 }
