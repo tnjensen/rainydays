@@ -331,7 +331,6 @@ input:focus:-moz-placeholder {
   color: #401021;
 }
 .wrapper {
-  min-height: 100vh;
   max-width: 1160px;
   margin: 0 auto;
 }
