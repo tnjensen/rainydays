@@ -27,65 +27,71 @@
         <div class="header-aside">
           <div class="secondary-nav">
             <ul>
-              <li><a href="login.html" id="login-btn">Login</a></li>
-              <li><a href="register.html" id="register-btn">Register</a></li>
-              <li>
-                <a href="cart.html" id="cart-btn"
-                  >Cart <i class="fas fa-shopping-cart"></i
-                ></a>
+              <li><label for="login-btn">Login</label>
+              <input type="checkbox" id="login-btn">
+              <div class="arrow-up-login"></div>
+              <div class="login-form">
+                <form>
+                  <div>
+                    <input type="text" placeholder="Your Email" required />
+                  </div>
+                  <div>
+                    <input type="password" placeholder="Password" required />
+                  </div>
+                  <div>
+                    <input type="submit" value="Log In" />
+                  </div>
+                  <div>
+                    <a href="#">Lost your password ?</a>
+                  </div>
+                </form>
+              </div>
+            </li>
+              <li><label for="register-btn">Register</label>
+              <input type="checkbox" id="register-btn">
+              <div class="arrow-up-register"></div>
+              <div class="register-form" id="register">
+                <form>
+                  <div>
+                    <input type="text" placeholder="Email Address" required />
+                  </div>
+      
+                  <div>
+                    <input type="password" placeholder="Password" required />
+                  </div>
+                  <div>
+                    <input type="password" placeholder="Confirm Password" required />
+                  </div>
+                  <div>
+                    <input type="submit" value="Sign Up" />
+                  </div>
+                </form>
+              </div>  
+            </li>
+            <li>
+              <label for="cart-btn">Cart <i class="fas fa-shopping-cart"></i
+                ></label>
+              <input type="checkbox" id="cart-btn">
+              <div class="arrow-up-cart"></div>
+              <div class="cart-form" id="cart">
+                <label>CART ITEMS</label>
+                <hr />
+                <div>
+                  <p>0 Items</p>
+                </div>
+                <div>
+                  <input type="submit" value="View Cart" />
+                </div>
+              </div>
               </li>
             </ul>
           </div>
           <!--secondary-nav-->
-          <div class="arrow-up-login"></div>
-          <div class="arrow-up-register"></div>
-          <div class="arrow-up-cart"></div>
         </div>
         <!--header-aside-->
-        <div class="login-form" id="login">
-          <form>
-            <div>
-              <input type="text" placeholder="Your Email" required />
-            </div>
-
-            <div>
-              <input type="password" placeholder="Password" required />
-            </div>
-            <div>
-              <input type="submit" value="Log In" />
-            </div>
-            <div>
-              <a href="#">Lost your password ?</a>
-            </div>
-          </form>
-        </div>
-        <div class="register-form" id="register">
-          <form>
-            <div>
-              <input type="text" placeholder="Email Address" required />
-            </div>
-
-            <div>
-              <input type="password" placeholder="Password" required />
-            </div>
-            <div>
-              <input type="password" placeholder="Confirm Password" required />
-            </div>
-            <div>
-              <input type="submit" value="Sign Up" />
-            </div>
-          </form>
-        </div>
-        <div class="cart-form" id="cart">
-          <label>CART ITEMS</label>
-          <hr />
-          <div>
-            <p>0 Items</p>
-          </div>
-          <div>
-            <input type="submit" value="View Cart" />
-          </div>
-        </div>
+        
+       
+       
         <div class="menu-wrap">
           <label for="checkbox">
             <p class="menu-icon">☰</p>
