@@ -522,6 +522,13 @@ hr {
   text-decoration: underline;
   color: #c8bb21;
 }
+.footer a{
+  color: #fffefe;
+  text-decoration: none;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
 @media screen and (min-width: 400px) and (max-width: 599px) {
   .site-logo {
     margin: 25px 0 40px 30px;
@@ -1092,6 +1099,7 @@ hr {
   }
   .footer-content {
     margin: 25px 25px 0 0;
+    line-height: 1.1rem;
     padding: 25px;
     display: flex;
     flex-direction: row;
@@ -1100,9 +1108,10 @@ hr {
     color: #fff;
   }
   .footer-category {
-    margin: 0 25px;
+    margin: 0 15px 0 30px;
   }
   .footer-nav {
     margin: 0 20px;
   }
+  
 }
