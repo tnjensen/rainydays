@@ -35,7 +35,10 @@ h2 {
   font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
   margin: 10px 0;
 }
-.site-logo {
+.site-header a{
+  max-width: 200px;
+}
+.site-logo{
   margin: 25px 0 40px 30px;
   max-width: 200px;
   margin-bottom: 0;
