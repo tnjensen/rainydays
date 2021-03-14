@@ -64,7 +64,7 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right: 130px;
+  right: 120px;
   top: 245px;
 }
 .arrow-up-register {
@@ -75,7 +75,7 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right: 80px;
+  right: 70px;
   top: 245px;
 }
 .arrow-up-cart {
@@ -587,7 +587,6 @@ hr {
   body {
     font-size: 0.9rem;
   }
-
   .site-logo {
     max-width: 300px;
   }
@@ -599,31 +598,31 @@ hr {
   }
   .arrow-up-login {
     right: 120px;
-    top: 270px;
+    top: 250px;
   }
   .arrow-up-register {
     right: 70px;
-    top: 270px;
+    top: 250px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 270px;
+    top: 250px;
   }
   .login-form {
     right: 40px;
-    top: 109px;
+    top: 90px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
-    top: 92px;
+    top: 72px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 130px;
+    top: 110px;
     border-radius: 5px;
     font-size: 1rem;
   }
