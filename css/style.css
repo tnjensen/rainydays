@@ -68,7 +68,7 @@ h2 {
   top: 245px;
 }
 .arrow-up-register {
- display: none;
+  display: none;
   width: 0;
   height: 0;
   position: absolute;
@@ -112,11 +112,6 @@ label:hover{
   border-radius: 5px;
   font-size: 1rem;
 }
-.login-form {
-  width: 240px;
-  margin: 0 auto;
-  color: #0b3f4d;
-}
 .login-form a {
   color: #0b3f4d;
   font-size: 0.9rem;
@@ -125,9 +120,6 @@ label:hover{
 .login-form a:hover {
   text-decoration: underline;
 }
-.register-form {
-  display: none;
-}
 #register-btn{
   display: none;
 }
@@ -135,6 +127,7 @@ label:hover{
   display: block;
 }
 .register-form {
+  display: none;
   padding: 10px;
   position: absolute;
   width: 220px;
@@ -145,12 +138,8 @@ label:hover{
   border-radius: 5px;
   font-size: 1rem;
 }
-.register-form form {
-  width: 240px;
-  margin: 0 auto;
-  color: #0b3f4d;
-}
 .cart-form {
+  display: none;
   padding: 10px;
   position: absolute;
   width: 220px;
@@ -164,8 +153,8 @@ label:hover{
 .cart-form p {
   margin: 10px 0;
 }
-.cart-form {
-  display: none;
+#cart-label{
+  color: #0b3f4d;
 }
 #cart-btn{
   display: none;
@@ -341,7 +330,6 @@ input:focus:-moz-placeholder {
   margin-left: 10px;
   padding: 2px;
 }
-
 .secondary-nav {
   margin-right: 10px;
 }
@@ -360,9 +348,6 @@ input:focus:-moz-placeholder {
 }
 .secondary-nav ul li a:hover {
   text-decoration: underline;
-  color: #0b3f4d;
-}
-.cart-form label{
   color: #0b3f4d;
 }
 .wrapper {
@@ -482,7 +467,6 @@ hr {
 .contact-location {
   margin: 20px 0;
 }
-
 .confirm-order button {
   margin-right: 10px;
 }
@@ -534,115 +518,39 @@ hr {
 }
 @media screen and (min-width: 400px) and (max-width: 599px) {
   .site-logo {
-    margin: 25px 0 40px 30px;
     max-width: 250px;
     margin-bottom: 0;
   }
   .arrow-up-login {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 15px solid #fff;
     right: 120px;
     top: 245px;
   }
   .arrow-up-register {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 15px solid #fff;
     right: 70px;
     top: 245px;
   }
   .arrow-up-cart {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 15px solid #fff;
     right: 24px;
     top: 245px;
   }
   .login-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 40px;
     top: 85px;
     border-radius: 5px;
     font-size: 1rem;
   }
-  .login-form form {
-    width: 240px;
-    margin: 0 auto;
-    color: #0b3f4d;
-  }
   .register-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 30px;
     top: 68px;
     border-radius: 5px;
     font-size: 1rem;
   }
-  .register-form form {
-    width: 240px;
-    margin: 0 auto;
-    color: #0b3f4d;
-  }
   .cart-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 22px;
     top: 105px;
     border-radius: 5px;
     font-size: 1rem;
   }
-  input[type="text"],
-  input[type="password"] {
-    margin: 4px 0 7px 0;
-    height: 25px;
-    border: 0;
-    outline: none;
-    box-shadow: inset 0 0 10px #eee;
-    border-radius: 5px;
-    font-style: oblique;
-    opacity: 0.7;
-  }
-  input[type="submit"] {
-    width: 75px;
-    height: 25px;
-    color: #401021;
-    margin: 10px 0 15px 0;
-    border-radius: 5px;
-    background-color: #c8bb21;
-  }
-  input[type="submit"]:hover {
-    background-color: #401021;
-    color: #efefef;
-  }
-  .login-form a {
-    color: #401021;
-    font-size: 0.9rem;
-    text-decoration: none;
-  }
-  .login-form a:hover {
-    text-decoration: underline;
-  }
-
   nav {
     top: 360px;
   }
@@ -671,12 +579,8 @@ hr {
     margin: 10px 7px 10px 0;
   }
   .footer-content {
-    margin: 25px 25px 0 0;
-    padding: 25px;
-    display: flex;
     flex-direction: column;
     font-size: 0.8rem;
-    color: #fff;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 799px) {
@@ -685,9 +589,7 @@ hr {
   }
 
   .site-logo {
-    margin: 25px 0 20px 30px;
     max-width: 300px;
-    align-self: center;
   }
   .site-branding {
     margin: 10px 0 0 25px;
@@ -696,100 +598,34 @@ hr {
     top: 360px;
   }
   .arrow-up-login {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 15px solid #fff;
     right: 120px;
     top: 270px;
   }
   .arrow-up-register {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 15px solid #fff;
     right: 70px;
     top: 270px;
   }
   .arrow-up-cart {
-    width: 0;
-    height: 0;
-    position: absolute;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 15px solid #fff;
     right: 24px;
     top: 270px;
   }
   .login-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 40px;
     top: 109px;
     border-radius: 5px;
     font-size: 1rem;
   }
-  .login-form form {
-    width: 240px;
-    margin: 0 auto;
-    color: #0b3f4d;
-  }
   .register-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 30px;
     top: 92px;
     border-radius: 5px;
     font-size: 1rem;
   }
-  .register-form form {
-    width: 240px;
-    margin: 0 auto;
-    color: #0b3f4d;
-  }
   .cart-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 22px;
     top: 130px;
     border-radius: 5px;
     font-size: 1rem;
-  }
-  input[type="text"],
-  input[type="password"] {
-    margin: 4px 0 7px 0;
-    height: 25px;
-    border: 0;
-    outline: none;
-    box-shadow: inset 0 0 10px #eee;
-    border-radius: 5px;
-    font-style: oblique;
-    opacity: 0.7;
-  }
-  input[type="submit"] {
-    width: 75px;
-    height: 25px;
-    color: #401021;
-    margin: 10px 0 15px 0;
-    border-radius: 5px;
-    background-color: #c8bb21;
-  }
-  input[type="submit"]:hover {
-    background-color: #401021;
-    color: #efefef;
   }
   input#city {
     width: 95px;
@@ -862,10 +698,6 @@ hr {
     font-size: 1rem;
   }
   .site-logo {
-    margin: 25px 0 20px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     max-width: 400px;
     margin-bottom: 25px;
   }
@@ -877,9 +709,6 @@ hr {
     color: #0b3f4d;
   }
   .arrow-up-login {
-    width: 0;
-    height: 0;
-    position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
@@ -888,9 +717,6 @@ hr {
     top: 35px;
   }
   .arrow-up-register {
-    width: 0;
-    height: 0;
-    position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
@@ -899,9 +725,6 @@ hr {
     top: 35px;
   }
   .arrow-up-cart {
-    width: 0;
-    height: 0;
-    position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
@@ -910,45 +733,20 @@ hr {
     top: 35px;
   }
   .login-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 40px;
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0b3f4d;
     font-size: 1rem;
   }
-  .login-form form {
-    width: 240px;
-    margin: 0 auto;
-    color: #0b3f4d;
-  }
   .register-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 30px;
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0b3f4d;
     font-size: 1rem;
   }
-  .register-form form {
-    width: 240px;
-    margin: 0 auto;
-    color: #0b3f4d;
-  }
   .cart-form {
-    padding: 10px;
-    position: absolute;
-    width: 220px;
-    height: auto;
-    background-color: #fffefe;
     right: 35px;
     top: 49px;
     border-radius: 5px;
@@ -957,38 +755,6 @@ hr {
   .cart-form p {
     margin: 10px 0;
   }
-  input[type="text"],
-  input[type="password"] {
-    margin: 4px 0 7px 0;
-    height: 25px;
-    border: 0;
-    outline: none;
-    box-shadow: inset 0 0 10px #eee;
-    border-radius: 5px;
-    font-style: oblique;
-    opacity: 0.7;
-  }
-  input[type="submit"] {
-    width: 75px;
-    height: 25px;
-    color: #401021;
-    margin: 10px 0 15px 0;
-    border-radius: 5px;
-    background-color: #c8bb21;
-  }
-  input[type="submit"]:hover {
-    background-color: #401021;
-    color: #efefef;
-  }
-  .login-form a {
-    color: #401021;
-    font-size: 0.9rem;
-    text-decoration: none;
-  }
-  .login-form a:hover {
-    text-decoration: underline;
-  }
-
   .secondary-nav {
     margin-right: 20px;
   }
@@ -1104,17 +870,14 @@ hr {
     margin: 25px 25px 0 0;
     line-height: 1.1rem;
     padding: 25px;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 0.8rem;
-    color: #fff;
   }
   .footer-category {
     margin: 0 15px 0 30px;
   }
   .footer-nav {
     margin: 0 20px;
-  }
-  
+  } 
 }
