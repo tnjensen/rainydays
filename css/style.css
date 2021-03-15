@@ -19,7 +19,7 @@ body {
   background-color: #efefef;
   font-family: Montserrat, Verdana, sans-serif;
   font-size: 0.8rem;
-  color: #0b3f4d;
+  color: #0a3945;
 }
 .site-header {
   display: flex;
@@ -27,7 +27,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #1fa9cc;
-  color: #0b3f4d;
+  color:#0a3945;
   font-size: 0.8rem;
 }
 h1,
@@ -113,7 +113,7 @@ label:hover{
   font-size: 1rem;
 }
 .login-form a {
-  color: #0b3f4d;
+  color: #0a3945;
   font-size: 0.9rem;
   text-decoration: none;
 }
@@ -154,7 +154,7 @@ label:hover{
   margin: 10px 0;
 }
 #cart-label{
-  color: #0b3f4d;
+  color: #0a3945;
 }
 #cart-btn{
   display: none;
@@ -225,7 +225,7 @@ select#country {
 }
 .menu-wrap a.active {
   background-color: #fffefe;
-  color: #0b3f4d;
+  color: #0a3945;
 }
 .menu-icon {
   font-size: 2.1em;
@@ -279,19 +279,19 @@ i {
 }
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #0b3f4d;
+  color: #0a3945;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #0b3f4d;
+  color: #0a3945;
 }
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #0b3f4d;
+  color: #0a3945;
 }
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #0b3f4d;
+  color: #0a3945;
 }
 input:focus::-webkit-input-placeholder {
   color: transparent !important;
@@ -318,7 +318,7 @@ input:focus:-moz-placeholder {
   font-size: 0.7rem;
 }
 .search-btn {
-  background-color: #0b3f4d;
+  background-color: #0a3945;
   padding: 2px;
   border: 0;
 }
@@ -348,7 +348,7 @@ input:focus:-moz-placeholder {
 }
 .secondary-nav ul li a:hover {
   text-decoration: underline;
-  color: #0b3f4d;
+  color: #0a3945;
 }
 .wrapper {
   max-width: 1160px;
@@ -401,7 +401,7 @@ input:focus:-moz-placeholder {
 
 .counter-minus-btn,
 .counter-plus-btn {
-  background-color: #0b3f4d;
+  background-color: #0a3945;
   color: #fffefe;
   height: 50px;
   width: 50px;
@@ -461,7 +461,7 @@ input:focus:-moz-placeholder {
   padding: 5px 0;
 }
 hr {
-  border: 1px solid #0b3f4d;
+  border: 1px solid #0a3945;
   margin: 10px 0;
 }
 .contact-location {
@@ -471,7 +471,7 @@ hr {
   margin-right: 10px;
 }
 .footer {
-  background-color: #0b3f4d;
+  background-color: #0a3945;
 }
 .footer p {
   margin: 5px 0;
@@ -589,6 +589,7 @@ hr {
   }
   .site-logo {
     max-width: 300px;
+    margin: 25px 0 10px 40px
   }
   .site-branding {
     margin: 10px 0 0 25px;
@@ -598,31 +599,31 @@ hr {
   }
   .arrow-up-login {
     right: 120px;
-    top: 250px;
+    top: 260px;
   }
   .arrow-up-register {
     right: 70px;
-    top: 250px;
+    top: 260px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 250px;
+    top: 260px;
   }
   .login-form {
     right: 40px;
-    top: 90px;
+    top: 100px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
-    top: 72px;
+    top: 82px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 110px;
+    top: 120px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -698,14 +699,13 @@ hr {
   }
   .site-logo {
     max-width: 400px;
-    margin-bottom: 25px;
+    margin: 30px 0 25px 40px;
+    
   }
   .site-header {
     display: grid;
     grid-template-columns: 450px repeat(2, 1fr);
     justify-content: space-around;
-    background-color: #1fa9cc;
-    color: #0b3f4d;
   }
   .arrow-up-login {
     border-left: 20px solid transparent;
@@ -735,21 +735,21 @@ hr {
     right: 40px;
     top: 49px;
     border-radius: 5px;
-    border-bottom: 2px solid #0b3f4d;
+    border-bottom: 2px solid #0a3945;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
     top: 49px;
     border-radius: 5px;
-    border-bottom: 2px solid #0b3f4d;
+    border-bottom: 2px solid #0a3945;
     font-size: 1rem;
   }
   .cart-form {
     right: 35px;
     top: 49px;
     border-radius: 5px;
-    border-bottom: 2px solid #0b3f4d;
+    border-bottom: 2px solid #0a3945;
   }
   .cart-form p {
     margin: 10px 0;
@@ -789,7 +789,7 @@ hr {
   }
   .search-btn {
     padding: 3px;
-    background-color: #0b3f4d;
+    background-color: #0a3945;
     border: 0;
   }
   .search-btn a {
