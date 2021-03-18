@@ -40,7 +40,7 @@ h2 {
 }
 .site-logo{
   margin: 25px 0 40px 30px;
-  max-width: 200px;
+  max-width: 150px;
   margin-bottom: 0;
 }
 
@@ -159,6 +159,10 @@ label:hover{
 #cart-btn{
   display: none;
 }
+.fa-shopping-cart{
+  color: #fffefe;
+  margin-left: 2px;
+}
 #cart-btn:checked ~ div{
   display: block;
 }
@@ -236,7 +240,7 @@ select#country {
 nav {
   position: absolute;
   background-color: #15748c;
-  top: 330px;
+  top: 320px;
   left: 0;
   width: 100%;
   z-index: 100;
@@ -319,7 +323,9 @@ input:focus:-moz-placeholder {
 }
 .search-btn {
   background-color: #0a3945;
-  padding: 2px;
+  padding: 3px;
+  position: relative;
+  top: 2px;
   border: 0;
 }
 .search-btn:hover {
@@ -334,7 +340,8 @@ input:focus:-moz-placeholder {
   margin-right: 10px;
 }
 .secondary-nav label{
-  color: #fffefe;
+  color: #0a3945;
+  font-weight: 500;
 }
 .secondary-nav ul {
   list-style-type: none;
@@ -518,7 +525,7 @@ hr {
 }
 @media screen and (min-width: 400px) and (max-width: 599px) {
   .site-logo {
-    max-width: 250px;
+    max-width: 200px;
     margin-bottom: 0;
   }
   .arrow-up-login {
@@ -552,7 +559,7 @@ hr {
     font-size: 1rem;
   }
   nav {
-    top: 360px;
+    top: 330px;
   }
   .main-content .hero img {
     max-width: 350px;
@@ -588,14 +595,14 @@ hr {
     font-size: 0.9rem;
   }
   .site-logo {
-    max-width: 300px;
+    max-width: 250px;
     margin: 25px 0 10px 40px
   }
   .site-branding {
     margin: 10px 0 0 25px;
   }
   nav {
-    top: 360px;
+    top: 350px;
   }
   .arrow-up-login {
     right: 120px;
@@ -651,7 +658,9 @@ hr {
     font-size: 0.8rem;
   }
   .search-btn {
-    padding: 3px;
+    padding: 4px;
+    position: relative;
+    top: 4px;
   }
   .main-content {
     font-size: 0.9rem;
@@ -698,7 +707,7 @@ hr {
     font-size: 1rem;
   }
   .site-logo {
-    max-width: 400px;
+    max-width: 300px;
     margin: 30px 0 25px 40px;
     
   }
@@ -788,7 +797,9 @@ hr {
     font-size: 0.9rem;
   }
   .search-btn {
-    padding: 3px;
+    padding: 5px;
+    position: relative;
+    top: 4px;
     background-color: #0a3945;
     border: 0;
   }
