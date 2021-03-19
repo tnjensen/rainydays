@@ -64,7 +64,7 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right: 120px;
+  right: 135px;
   top: 220px;
 }
 .arrow-up-register {
@@ -75,7 +75,7 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right: 70px;
+  right: 80px;
   top: 220px;
 }
 .arrow-up-cart {
@@ -529,11 +529,11 @@ hr {
     margin-bottom: 0;
   }
   .arrow-up-login {
-    right: 120px;
+    right: 135px;
     top: 220px;
   }
   .arrow-up-register {
-    right: 70px;
+    right: 80px;
     top: 220px;
   }
   .arrow-up-cart {
@@ -605,11 +605,11 @@ hr {
     top: 350px;
   }
   .arrow-up-login {
-    right: 120px;
+    right: 135px;
     top: 235px;
   }
   .arrow-up-register {
-    right: 70px;
+    right: 80px;
     top: 235px;
   }
   .arrow-up-cart {
