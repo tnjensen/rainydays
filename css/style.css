@@ -65,7 +65,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 120px;
-  top: 245px;
+  top: 220px;
 }
 .arrow-up-register {
   display: none;
@@ -76,7 +76,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 70px;
-  top: 245px;
+  top: 220px;
 }
 .arrow-up-cart {
   display: none;
@@ -87,7 +87,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 24px;
-  top: 245px;
+  top: 220px;
 }
 label:hover{
   cursor: pointer;
@@ -108,7 +108,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 40px;
-  top: 85px;
+  top: 60px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -134,7 +134,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 30px;
-  top: 67px;
+  top: 42px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -146,7 +146,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 105px;
+  top: 80px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -349,13 +349,13 @@ input:focus:-moz-placeholder {
 .secondary-nav ul li {
   display: inline-flex;
 }
-.secondary-nav ul li a {
+.secondary-nav ul li{
   margin-right: 5px;
   text-decoration: none;
 }
-.secondary-nav ul li a:hover {
+.secondary-nav ul li label:hover {
   text-decoration: underline;
-  color: #0a3945;
+  color: #fffefe;
 }
 .wrapper {
   max-width: 1160px;
@@ -530,31 +530,31 @@ hr {
   }
   .arrow-up-login {
     right: 120px;
-    top: 245px;
+    top: 220px;
   }
   .arrow-up-register {
     right: 70px;
-    top: 245px;
+    top: 220px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 245px;
+    top: 220px;
   }
   .login-form {
     right: 40px;
-    top: 85px;
+    top: 60px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
-    top: 68px;
+    top: 43px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 105px;
+    top: 80px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -606,31 +606,31 @@ hr {
   }
   .arrow-up-login {
     right: 120px;
-    top: 260px;
+    top: 235px;
   }
   .arrow-up-register {
     right: 70px;
-    top: 260px;
+    top: 235px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 260px;
+    top: 235px;
   }
   .login-form {
     right: 40px;
-    top: 100px;
+    top: 75px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
-    top: 82px;
+    top: 57px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 120px;
+    top: 95px;
     border-radius: 5px;
     font-size: 1rem;
   }
