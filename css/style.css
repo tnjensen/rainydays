@@ -717,38 +717,32 @@ hr {
     justify-content: space-around;
   }
   .arrow-up-login {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
     border-top: none;
-    right: 130px;
+    right: 145px;
     top: 35px;
   }
   .arrow-up-register {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
     border-top: none;
-    right: 80px;
+    right: 90px;
     top: 35px;
   }
   .arrow-up-cart {
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
     border-bottom: 15px solid #fff;
     border-top: none;
     right: 35px;
     top: 35px;
   }
   .login-form {
-    right: 40px;
+    right: 50px;
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0a3945;
     font-size: 1rem;
   }
   .register-form {
-    right: 30px;
+    right: 40px;
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0a3945;
