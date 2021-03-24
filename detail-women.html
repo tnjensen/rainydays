@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
@@ -104,24 +104,21 @@
           </nav>
           <div class="search">
             <ul>
-              <li><input class="search-field" placeholder="Search..." /></li>
+              <li><input class="search-field" placeholder="Search..." aria-label="search-field" /></li>
               <li>
-                <button class="search-btn">
-                  <a href="search.html"><i class="fas fa-search"></i></a>
-                </button>
+                <a href="search.html" aria-label="Search" class="search-btn" title="search">
+                  <i class="fas fa-search"></i></a>
               </li>
             </ul>
-          </div>
+          </div><!--search-->
         </div>
         <!--menu-wrap-->
       </div>
       <!--site-header-->
     </header>
     <div class="wrapper">
-      <main>
-          <div class="main-content">       
-            <div class="product-detail">      
-                <h1>Title</h1>
+      <main class="product-detail">  
+                <!-- <h1>Title</h1>
             <p class="product-description">Description</p>      
             <div class="product-detail-item">
                 <div class="icons-aside">
@@ -130,7 +127,7 @@
                     <img src="images/Icon awesome-hiking.svg">
                     <img src="images/Icon ionic-ios-bicycle.svg">
                 </div>
-                <img src="images/raincoat_female_large.png" alt="Illustration of male raincoat">
+                <img src="images/raincoat_male_large.png" alt="Illustration of male raincoat">
                 <div class="detail-aside">
                     <p>Rating, store</p>
                     <p>Article No.</p>
@@ -141,12 +138,7 @@
                     <button class="counter-plus-btn"><h2>+</h2></button>
                     </div>
                     <a href="checkout.html"><button class="btn-viewcoat addcart">Add to Cart</button></a>
-                </div>
-                
-        </div><!--product-list-item-->
-        
-        </div><!--product-list--> 
-    </div><!--main-content-->
+                </div> -->
       </main>
     </div>
     <!--wrapper-->
@@ -193,5 +185,7 @@
       <!--footer-content-->
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/womens.js"></script>
+    <script src="js/detailsWomen.js"></script>
   </body>
 </html>

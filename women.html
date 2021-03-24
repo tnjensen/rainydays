@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
@@ -104,14 +104,13 @@
           </nav>
           <div class="search">
             <ul>
-              <li><input class="search-field" placeholder="Search..." /></li>
+              <li><input class="search-field" placeholder="Search..." aria-label="search-field" /></li>
               <li>
-                <button class="search-btn">
-                  <a href="search.html"><i class="fas fa-search"></i></a>
-                </button>
+                <a href="search.html" aria-label="Search" class="search-btn" title="search">
+                  <i class="fas fa-search"></i></a>
               </li>
             </ul>
-          </div>
+          </div><!--search-->
         </div>
         <!--menu-wrap-->
       </div>
@@ -122,7 +121,7 @@
           <div class="main-content">
             <h1>Women's jackets</h1>
             <div class="product-list">            
-            <div class="product-list-item">
+            <!-- <div class="product-list-item">
              <img src="images/raincoat_female_large.png" alt="Illustration of male raincoat">
          <h2>Women's rain coat</h2>
          <h3>Title</h3>
@@ -202,5 +201,7 @@
       <!--footer-content-->
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/womens.js"></script>
+    <script src="js/addWomensProducts.js"></script>
   </body>
 </html>

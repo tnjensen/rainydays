@@ -323,9 +323,9 @@ input:focus:-moz-placeholder {
 }
 .search-btn {
   background-color: #0a3945;
-  padding: 3px;
+  padding: 3px 4px;
   position: relative;
-  top: 2px;
+  top: 3px;
   border: 0;
 }
 .search-btn:hover {
@@ -368,9 +368,15 @@ input:focus:-moz-placeholder {
   align-content: center;
   margin: 15px 25px;
 }
+.main-content h1 {
+  align-self: center;
+}
 .main-content .hero img {
   margin: 25px 0;
   max-width: 300px;
+}
+.product-list-item{
+  margin-bottom: 20px;
 }
 .product-list-item img {
   max-width: 150px;
@@ -385,16 +391,18 @@ input:focus:-moz-placeholder {
 .icons-aside img {
   margin: 10px 5px 5px 0;
 }
-.btn-viewcoat {
-  margin: 10px 0;
+.cta-small{
+  text-decoration: none;
   padding: 5px 10px;
   font-weight: 600;
   color: #401021;
   background-color: #c8bb21;
   border-radius: 5px;
   border: none;
+  position: relative;
+  top: 15px;
 }
-.btn-viewcoat:hover {
+.cta-small:hover {
   background-color: #401021;
   color: #c8bb21;
 }
@@ -658,7 +666,7 @@ hr {
     font-size: 0.8rem;
   }
   .search-btn {
-    padding: 4px;
+    padding: 4px 6px;
     position: relative;
     top: 4px;
   }
@@ -791,7 +799,7 @@ hr {
     font-size: 0.9rem;
   }
   .search-btn {
-    padding: 5px;
+    padding: 5px 8px;
     position: relative;
     top: 4px;
     background-color: #0a3945;
@@ -805,9 +813,6 @@ hr {
     margin-left: 10px;
     padding: 2px;
     margin-top: 1px;
-  }
-  .main-content h1 {
-    align-self: center;
   }
   #h1-home {
     align-self: flex-start;

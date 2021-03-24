@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
@@ -26,62 +26,69 @@
         <div class="header-aside">
           <div class="secondary-nav">
             <ul>
-              <li><label for="login-btn">Login</label>
-              <input type="checkbox" id="login-btn">
-              <div class="arrow-up-login"></div>
-              <div class="login-form">
-                <form>
-                  <div>
-                    <input type="text" placeholder="Your Email" required />
-                  </div>
-                  <div>
-                    <input type="password" placeholder="Password" required />
-                  </div>
-                  <div>
-                    <input type="submit" value="Log In" />
-                  </div>
-                  <div>
-                    <a href="#">Lost your password ?</a>
-                  </div>
-                </form>
-              </div>
-            </li>
-              <li><label for="register-btn">Register</label>
-              <input type="checkbox" id="register-btn">
-              <div class="arrow-up-register"></div>
-              <div class="register-form" id="register">
-                <form>
-                  <div>
-                    <input type="text" placeholder="Email Address" required />
-                  </div>
-      
-                  <div>
-                    <input type="password" placeholder="Password" required />
-                  </div>
-                  <div>
-                    <input type="password" placeholder="Confirm Password" required />
-                  </div>
-                  <div>
-                    <input type="submit" value="Sign Up" />
-                  </div>
-                </form>
-              </div>  
-            </li>
-            <li>
-              <label for="cart-btn">Cart <i class="fas fa-shopping-cart"></i
+              <li>
+                <label for="login-btn">Login</label>
+                <input type="checkbox" id="login-btn" />
+                <div class="arrow-up-login"></div>
+                <div class="login-form">
+                  <form>
+                    <div>
+                      <input type="text" placeholder="Your Email" required />
+                    </div>
+                    <div>
+                      <input type="password" placeholder="Password" required />
+                    </div>
+                    <div>
+                      <input type="submit" value="Log In" />
+                    </div>
+                    <div>
+                      <a href="#">Lost your password ?</a>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label for="register-btn">Register</label>
+                <input type="checkbox" id="register-btn" />
+                <div class="arrow-up-register"></div>
+                <div class="register-form" id="register">
+                  <form>
+                    <div>
+                      <input type="text" placeholder="Email Address" required />
+                    </div>
+
+                    <div>
+                      <input type="password" placeholder="Password" required />
+                    </div>
+                    <div>
+                      <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <input type="submit" value="Sign Up" />
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label for="cart-btn"
+                  >Cart <i class="fas fa-shopping-cart"></i
                 ></label>
-              <input type="checkbox" id="cart-btn">
-              <div class="arrow-up-cart"></div>
-              <div class="cart-form" id="cart">
-                <label>CART ITEMS</label>
-                <hr />
-                <div>
-                  <p>0 Items</p>
+                <input type="checkbox" id="cart-btn" />
+                <div class="arrow-up-cart"></div>
+                <div class="cart-form" id="cart">
+                  <label>CART ITEMS</label>
+                  <hr />
+                  <div>
+                    <p>0 Items</p>
+                  </div>
+                  <div>
+                    <input type="submit" value="View Cart" />
+                  </div>
                 </div>
-                <div>
-                  <input type="submit" value="View Cart" />
-                </div>
-              </div>
               </li>
             </ul>
           </div>
@@ -104,26 +111,24 @@
           </nav>
           <div class="search">
             <ul>
-              <li><input class="search-field" placeholder="Search..." /></li>
+              <li><input class="search-field" placeholder="Search..." aria-label="search-field" /></li>
               <li>
-                <button class="search-btn">
-                  <a href="search.html"><i class="fas fa-search"></i></a>
-                </button>
+                <a href="search.html" aria-label="Search" class="search-btn" title="search">
+                  <i class="fas fa-search"></i></a>
               </li>
             </ul>
-          </div>
+          </div><!--search-->
         </div>
         <!--menu-wrap-->
       </div>
       <!--site-header-->
     </header>
     <div class="wrapper">
-      <main>
-          <div class="main-content">
-            <h1>Men's jackets</h1>
-            <div class="product-list">            
-            <div class="product-list-item">
-             <img src="images/raincoat_male_large.png" alt="Illustration of male raincoat">
+      <main class="main-content">
+        <h1>Men's jackets</h1>
+        <div class="product-list">
+          <!--<div class="product-list-item">
+            <img src="images/raincoat_male_large.png" alt="Illustration of male raincoat">
          <h2>Men's rain coat</h2>
          <h3>Title</h3>
          <p>Rating, store</p>
@@ -154,8 +159,8 @@
          <h3>$ Price</h3>
          <button class="btn-viewcoat">See It</button>
         </div><!--product-list-item-->
-        </div><!--product-list--> 
-    </div><!--main-content-->
+        </div>
+        <!--product-list-->
       </main>
     </div>
     <!--wrapper-->
@@ -202,5 +207,7 @@
       <!--footer-content-->
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/mens.js"></script>
+    <script src="js/addMensProducts.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@ for (var i = 0; i < document.links.length; i++) {
     }
 }
 
-$(document).ready(function(){
+/* $(document).ready(function(){
   var arrowLogin = $(".arrow-up-login");
   var arrowRegister = $(".arrow-up-register");
   var arrowCart = $(".arrow-up-cart");
@@ -50,6 +50,6 @@ $(document).ready(function(){
       status = false;
     }
   })
-})
+}) */
 
 
