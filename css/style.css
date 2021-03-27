@@ -365,7 +365,6 @@ input:focus:-moz-placeholder {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
   margin: 15px 25px;
 }
 .main-content h1 {
@@ -407,13 +406,14 @@ input:focus:-moz-placeholder {
   color: #c8bb21;
 }
 .addcart {
-  margin: 20px;
   padding: 16px 20px;
+  position: relative;
+  top: 10px;
+  left: 10px;
 }
 .detail-counter-aside {
   display: inline-flex;
 }
-
 .counter-minus-btn,
 .counter-plus-btn {
   background-color: #0a3945;
@@ -430,10 +430,11 @@ input:focus:-moz-placeholder {
 .cancel {
   background-color: #15748c;
   color: #fffefe;
-  margin: 20px 0;
+  margin: 0 10px 0 0;
 }
 .checkout-list {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 .checkout-list-item {
   margin: 10px 0;
@@ -442,14 +443,15 @@ input:focus:-moz-placeholder {
 .checkout-list-item h2 {
   margin-bottom: 10px;
 }
+.checkout-list-item:last-child{
+  flex: 0 0 100%;
+  margin: 0 0 10px 0;
+}
 .billing-form div {
   padding: 3px 0 5px 0;
 }
 .credit-card-form div {
   padding: 3px 0 5px 0;
-}
-.checkout {
-  margin-top: 10px;
 }
 .about-list {
   margin: 40px 0 30px 0;
@@ -700,6 +702,12 @@ hr {
   .checkout-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .checkout-buttons{
+    flex: 0 0 100%;
+    margin: 0 0 20px 0;
+    
   }
   #embedmap {
     width: 350px !important;
@@ -840,6 +848,7 @@ hr {
     margin-top: 18px;
   }
   .addcart {
+    top: 15px;
     margin: 10px 0;
     padding: 16px 20px;
   }
@@ -851,13 +860,16 @@ hr {
     width: 28px;
     margin: 10px 7px 10px 0;
   }
-  .checkout-list {
+ .checkout-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
-  .checkout-list-item {
-    padding-left: 20px;
-  }
+ .checkout-buttons{
+   flex: 0 0 100%;
+   margin: 5px 0 25px 0;
+ }
+  
   .about-list {
     display: inline-flex;
   }
@@ -867,6 +879,12 @@ hr {
   #embedmap {
     width: 450px !important;
     height: 450px !important;
+  }
+  #embedmap-canvas img{
+    max-width:none!important;
+    background:none!important;
+    font-size: inherit;
+    font-weight:inherit;
   }
   .confirm-order button {
     margin-right: 20px;
