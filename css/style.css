@@ -321,7 +321,7 @@ input:focus:-moz-placeholder {
 }
 .search-field {
   padding: 2px;
-  max-width: 90px;
+  max-width: 110px;
   font-size: 0.7rem;
 }
 .search-btn {
@@ -674,8 +674,6 @@ footer{
     text-decoration: underline;
   }
   .search-field {
-    padding: 2px;
-    max-width: 90px;
     font-size: 0.8rem;
   }
   .search-btn {
@@ -818,7 +816,6 @@ footer{
     margin-top: 8px;
   }
   .search-field {
-    max-width: 120px;
     font-size: 0.9rem;
   }
   .search-btn {
