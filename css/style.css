@@ -490,7 +490,8 @@ hr {
 .contact-location {
   margin: 20px 0;
 }
-.confirm-order button {
+.confirm-order{
+  text-align: center;
   margin-right: 10px;
 }
 .footer {
