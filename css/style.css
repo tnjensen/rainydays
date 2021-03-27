@@ -435,6 +435,7 @@ input:focus:-moz-placeholder {
 .checkout-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .checkout-list-item {
   margin: 10px 0;
@@ -443,8 +444,7 @@ input:focus:-moz-placeholder {
 .checkout-list-item h2 {
   margin-bottom: 10px;
 }
-.checkout-list-item:last-child{
-  flex: 0 0 100%;
+.checkout-list-buttons{
   margin: 0 0 10px 0;
 }
 .billing-form div {
@@ -704,10 +704,14 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .checkout-buttons{
+  .checkout-list-buttons{
     flex: 0 0 100%;
+    text-align: center;
     margin: 0 0 20px 0;
     
+  }
+  .cancel{
+    margin-right: 20px;
   }
   #embedmap {
     width: 350px !important;
@@ -861,15 +865,19 @@ hr {
     margin: 10px 7px 10px 0;
   }
  .checkout-list {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
- .checkout-buttons{
+ .checkout-list-buttons{
    flex: 0 0 100%;
-   margin: 5px 0 25px 0;
+   text-align: center;
+   margin: 5px 30px 25px 0;
  }
-  
+ .checkout{
+  margin:0 0 0 30px;
+}
+.cancel{
+  margin: 0;
+}
   .about-list {
     display: inline-flex;
   }
