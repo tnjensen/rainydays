@@ -70,7 +70,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 135px;
-  top: 220px;
+  top: 218px;
 }
 .arrow-up-register {
   display: none;
@@ -81,7 +81,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 80px;
-  top: 220px;
+  top: 218px;
 }
 .arrow-up-cart {
   display: none;
@@ -92,7 +92,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 24px;
-  top: 220px;
+  top: 218px;
 }
 label:hover{
   cursor: pointer;
@@ -566,31 +566,31 @@ footer{
   }
   .arrow-up-login {
     right: 135px;
-    top: 220px;
+    top: 231px;
   }
   .arrow-up-register {
     right: 80px;
-    top: 220px;
+    top: 231px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 220px;
+    top: 231px;
   }
   .login-form {
     right: 40px;
-    top: 60px;
+    top: 70px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
-    top: 43px;
+    top: 53px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 80px;
+    top: 92px;
     border-radius: 5px;
     font-size: 1rem;
   }
