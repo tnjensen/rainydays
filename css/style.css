@@ -15,6 +15,8 @@
 body {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   background-color: #efefef;
   font-family: Montserrat, Verdana, sans-serif;
   font-size: 0.8rem;
@@ -374,15 +376,16 @@ input:focus:-moz-placeholder {
   align-self: center;
 }
 .hero {
-  background: url("../images/pexels-vlad-bagacian-2819551_resized.jpg") no-repeat bottom left;
+  background: url("../images/pexels-vlad-bagacian-2819551_resized.jpg") no-repeat center;
   background-size: cover;
+  width: 100%;
   height: 500px;
   margin-bottom: 15px;
 }
 .newsletter-form {
   padding: 10px;
   position: static;
-  margin: 70px;
+  margin: 20px;
   width: 220px;
   height: auto;
   background-color: #fffefe;
@@ -598,6 +601,9 @@ footer{
     /* max-width: 350px; */
     margin: 25px 0 25px;
   }
+  .newsletter-form{
+    margin: 30px;
+  }
   .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -701,6 +707,7 @@ footer{
     /* max-width: 400px; */
   }
   .newsletter-form{
+    margin: 40px;
     font-size: .9rem;
   }
   .product-list {
@@ -853,6 +860,7 @@ footer{
     align-self: flex-start;
   }
   .newsletter-form{
+    margin: 50px;
     font-size: 1rem;
   }
   .product-list {
