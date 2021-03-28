@@ -70,7 +70,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 135px;
-  top: 218px;
+  top: 215px;
 }
 .arrow-up-register {
   display: none;
@@ -81,7 +81,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 80px;
-  top: 218px;
+  top: 215px;
 }
 .arrow-up-cart {
   display: none;
@@ -92,7 +92,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 24px;
-  top: 218px;
+  top: 215px;
 }
 label:hover{
   cursor: pointer;
@@ -113,7 +113,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 40px;
-  top: 60px;
+  top: 55px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -139,7 +139,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 30px;
-  top: 42px;
+  top: 38px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -151,7 +151,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 80px;
+  top: 78px;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -566,31 +566,31 @@ footer{
   }
   .arrow-up-login {
     right: 135px;
-    top: 231px;
+    top: 215px;
   }
   .arrow-up-register {
     right: 80px;
-    top: 231px;
+    top: 215px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 231px;
+    top: 215px;
   }
   .login-form {
     right: 40px;
-    top: 70px;
+    top: 54px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .register-form {
     right: 30px;
-    top: 53px;
+    top: 37px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 92px;
+    top: 76px;
     border-radius: 5px;
     font-size: 1rem;
   }
