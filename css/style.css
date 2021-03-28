@@ -373,9 +373,21 @@ input:focus:-moz-placeholder {
 .main-content h1 {
   align-self: center;
 }
-.main-content .hero img {
-  margin: 25px 0;
-  max-width: 300px;
+.hero {
+  background: url("../images/pexels-vlad-bagacian-2819551_resized.jpg") no-repeat bottom left;
+  background-size: cover;
+  height: 500px;
+  margin-bottom: 15px;
+}
+.newsletter-form {
+  padding: 10px;
+  position: static;
+  margin: 70px;
+  width: 220px;
+  height: auto;
+  background-color: #fffefe;
+  border-radius: 5px;
+  font-size: .8rem;
 }
 .product-list{
   margin: auto;
@@ -583,7 +595,7 @@ footer{
     top: 330px;
   }
   .main-content .hero img {
-    max-width: 350px;
+    /* max-width: 350px; */
     margin: 25px 0 25px;
   }
   .product-list {
@@ -686,7 +698,10 @@ footer{
   }
   .main-content .hero img {
     margin: 25px 0;
-    max-width: 400px;
+    /* max-width: 400px; */
+  }
+  .newsletter-form{
+    font-size: .9rem;
   }
   .product-list {
     display: flex;
@@ -837,9 +852,8 @@ footer{
   #h1-home {
     align-self: flex-start;
   }
-  .main-content .hero img {
-    margin: 25px 0;
-    max-width: 500px;
+  .newsletter-form{
+    font-size: 1rem;
   }
   .product-list {
     display: flex;
@@ -924,3 +938,4 @@ footer{
     margin: 0 20px;
   } 
 }
+
