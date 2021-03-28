@@ -388,12 +388,20 @@ input:focus:-moz-placeholder {
 .newsletter-form {
   padding: 10px;
   position: static;
-  margin: 20px;
   width: 220px;
+  margin: 20px;
   height: auto;
   background-color: #fffefe;
   border-radius: 5px;
   font-size: .8rem;
+}
+.newsletter-form a {
+  color: #0a3945;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.newsletter-form a:hover {
+  text-decoration: underline;
 }
 .product-list{
   margin: auto;
@@ -563,6 +571,9 @@ footer{
   text-decoration: underline;
 }
 @media screen and (min-width: 400px) and (max-width: 599px) {
+  body{
+    font-size: .9rem;
+  }
   .site-logo {
     max-width: 200px;
     margin-bottom: 0;
@@ -605,7 +616,7 @@ footer{
     margin: 25px 0 25px;
   }
   .newsletter-form{
-    margin: 30px;
+    margin: 20px;
   }
   .product-list {
     display: flex;
@@ -634,7 +645,7 @@ footer{
 }
 @media screen and (min-width: 600px) and (max-width: 799px) {
   body {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   .site-logo {
     max-width: 250px;
@@ -710,7 +721,7 @@ footer{
     /* max-width: 400px; */
   }
   .newsletter-form{
-    margin: 40px;
+    margin: 20px;
     font-size: .9rem;
   }
   .product-list {
@@ -758,7 +769,7 @@ footer{
 }
 @media screen and (min-width: 800px) {
   body {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .site-logo {
     max-width: 300px;
@@ -863,7 +874,7 @@ footer{
     align-self: flex-start;
   }
   .newsletter-form{
-    margin: 50px;
+    margin: 20px;
     font-size: 1rem;
   }
   .product-list {
