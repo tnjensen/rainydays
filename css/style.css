@@ -386,14 +386,25 @@ input:focus:-moz-placeholder {
   margin: 15px 0; 
 }
 .newsletter-form {
+  animation: newsletter 1s forwards;
+  animation-delay: 1s;
+  left: -1000px;
   padding: 10px;
-  position: static;
+  position: relative;
   width: 220px;
   margin: 20px;
   height: auto;
   background-color: #fffefe;
   border-radius: 5px;
   font-size: .8rem;
+}
+@keyframes newsletter{
+  0%{
+    left:-1000px;
+  }
+  100%{
+    left: 0px;
+  }
 }
 .newsletter-form a {
   color: #0a3945;
@@ -403,6 +414,7 @@ input:focus:-moz-placeholder {
 .newsletter-form a:hover {
   text-decoration: underline;
 }
+
 .product-list{
   margin: auto;
 }
