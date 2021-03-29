@@ -764,8 +764,8 @@ hr {
   }
 }
 @media screen and (min-width: 800px) {
-  body {
-    font-size: 1.1rem;
+  body{
+    font-size: 1rem;
   }
   .site-logo {
     max-width: 300px;
