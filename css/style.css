@@ -69,17 +69,6 @@ h2 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
-  right: 135px;
-  top: 215px;
-}
-.arrow-up-register {
-  display: none;
-  width: 0;
-  height: 0;
-  position: absolute;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 15px solid #fff;
   right: 80px;
   top: 215px;
 }
@@ -124,24 +113,6 @@ label:hover{
 }
 .login-form a:hover {
   text-decoration: underline;
-}
-#register-btn{
-  display: none;
-}
-#register-btn:checked ~ div{
-  display: block;
-}
-.register-form {
-  display: none;
-  padding: 10px;
-  position: absolute;
-  width: 220px;
-  height: auto;
-  background-color: #fffefe;
-  right: 30px;
-  top: 38px;
-  border-radius: 5px;
-  font-size: 1rem;
 }
 .cart-form {
   display: none;
@@ -385,7 +356,7 @@ input:focus:-moz-placeholder {
   height: 500px;
   margin: 15px 0; 
 }
-.newsletter-form {
+.register-form {
   animation: newsletter 1s forwards;
   animation-delay: 1s;
   left: -1000px;
@@ -406,15 +377,14 @@ input:focus:-moz-placeholder {
     left: 0px;
   }
 }
-.newsletter-form a {
+.register-form a {
   color: #0a3945;
   font-size: 0.9rem;
   text-decoration: none;
 }
-.newsletter-form a:hover {
+.register-form a:hover {
   text-decoration: underline;
 }
-
 .product-list{
   margin: auto;
 }
@@ -587,10 +557,6 @@ hr {
     margin-bottom: 0;
   }
   .arrow-up-login {
-    right: 135px;
-    top: 215px;
-  }
-  .arrow-up-register {
     right: 80px;
     top: 215px;
   }
@@ -601,12 +567,6 @@ hr {
   .login-form {
     right: 40px;
     top: 54px;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  .register-form {
-    right: 30px;
-    top: 37px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -623,7 +583,7 @@ hr {
     /* max-width: 350px; */
     margin: 25px 0 25px;
   }
-  .newsletter-form{
+  .register-form{
     margin: 20px;
   }
   .product-list {
@@ -666,10 +626,6 @@ hr {
     top: 350px;
   }
   .arrow-up-login {
-    right: 135px;
-    top: 235px;
-  }
-  .arrow-up-register {
     right: 80px;
     top: 235px;
   }
@@ -680,12 +636,6 @@ hr {
   .login-form {
     right: 40px;
     top: 75px;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  .register-form {
-    right: 30px;
-    top: 57px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -728,7 +678,7 @@ hr {
     margin: 25px 0;
     /* max-width: 400px; */
   }
-  .newsletter-form{
+  .register-form{
     margin: 20px;
     font-size: .9rem;
   }
@@ -792,12 +742,6 @@ hr {
   .arrow-up-login {
     border-bottom: 15px solid #fff;
     border-top: none;
-    right: 145px;
-    top: 35px;
-  }
-  .arrow-up-register {
-    border-bottom: 15px solid #fff;
-    border-top: none;
     right: 90px;
     top: 35px;
   }
@@ -809,13 +753,6 @@ hr {
   }
   .login-form {
     right: 50px;
-    top: 49px;
-    border-radius: 5px;
-    border-bottom: 2px solid #0a3945;
-    font-size: 1rem;
-  }
-  .register-form {
-    right: 40px;
     top: 49px;
     border-radius: 5px;
     border-bottom: 2px solid #0a3945;
@@ -881,7 +818,7 @@ hr {
   #h1-home {
     align-self: flex-start;
   }
-  .newsletter-form{
+  .register-form{
     margin: 20px;
     font-size: 1rem;
   }
