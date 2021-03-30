@@ -100,11 +100,11 @@
       <main class="main-content">
           <h1>Checkout Page</h1>
           <div class="checkout-list">
-            <form>
+           
               <div class="checkout-list-item">
                 <h2>Billing Info</h2>
                 <div class="billing-form" id="billing">
-                  
+                  <form>
                     <label>Full Name</label>
                     <div>
                       <input type="text" placeholder="Full Name" required />
@@ -370,12 +370,14 @@
                           <option value="Zimbabwe">Zimbabwe</option>
                       </select>
                     </div>
+                    </form>
                 </div><!--billing-form-->
               </div><!--checkout-list-item-->
               <div class="checkout-list-item">
                 <h2>Credit Card Info</h2>
                 <div class="credit-card-form" id="credit-card">
-                    <label for="ccn">Card number</label>
+                  <form>
+                      <label for="ccn">Card number</label>
                     <div>
                       <input
                         id="ccn"
@@ -409,8 +411,8 @@
                   <a href="confirm-order.html"
                   class="checkout cta-small">Place Order</a>
               </div><!--checkout-list-buttons-->
+              </form>
             </div><!--checkout-list-->
-        </form>
       </main>
     </div><!--wrapper-->
     <footer class="footer">
