@@ -389,6 +389,7 @@ input:focus:-moz-placeholder {
   margin: auto;
 }
 .product-list-item{
+  padding-bottom: 20px;
   margin-bottom: 20px;
 }
 .product-list-item img {
@@ -844,7 +845,7 @@ hr {
     grid-template-columns: 1fr 2fr 1fr;
   }
   .detail-aside {
-    margin-top: 18px;
+    margin: 20px;
   }
   .addcart {
     top: 15px;
