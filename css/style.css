@@ -104,7 +104,7 @@ label:hover{
   right: 40px;
   top: 55px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 .login-form a {
   color: #0a3945;
@@ -124,7 +124,7 @@ label:hover{
   right: 22px;
   top: 78px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 .cart-form p {
   margin: 10px 0;
@@ -334,7 +334,7 @@ input:focus:-moz-placeholder {
   color: #fffefe;
 }
 .wrapper {
-  max-width: 1160px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 .main-content {
@@ -379,7 +379,7 @@ input:focus:-moz-placeholder {
 }
 .register-form a {
   color: #0a3945;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-decoration: none;
 }
 .register-form a:hover {
@@ -682,6 +682,9 @@ hr {
     margin: 20px;
     font-size: .9rem;
   }
+  .register-form a{
+    font-size: .9rem;
+  }
   .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -820,6 +823,9 @@ hr {
   }
   .register-form{
     margin: 20px;
+    font-size: 1rem;
+  }
+  .register-form a{
     font-size: 1rem;
   }
   .product-list {
