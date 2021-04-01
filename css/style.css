@@ -447,6 +447,8 @@ input:focus:-moz-placeholder {
 }
 #faq-item-1:checked ~ p{
   display: block;
+  background-color: #c8bb21;
+  color: #401021;
 }
 #faq-item-2{
   display: none;
@@ -456,6 +458,8 @@ input:focus:-moz-placeholder {
 }
 #faq-item-2:checked ~ p{
   display: block;
+  background-color: #c8bb21;
+  color: #401021;
 }
 .product-list{
   margin: auto;
