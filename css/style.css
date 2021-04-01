@@ -385,6 +385,9 @@ input:focus:-moz-placeholder {
 .register-form a:hover {
   text-decoration: underline;
 }
+.register-form h3{
+  margin-bottom: 10px;
+}
 .members-menu{
   list-style-type: none;
   display: inline-flex;
