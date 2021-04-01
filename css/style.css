@@ -44,7 +44,7 @@ h2 {
   max-width: 200px;
 }
 .site-logo{
-  margin: 25px 0 40px 30px;
+  margin: 25px 30px;
   max-width: 150px;
   margin-bottom: 0;
 }
@@ -57,7 +57,7 @@ h2 {
   margin-left: auto;
 }
 .site-branding {
-  margin: 30px 0 5px 25px;
+  margin: 20px 0 5px 25px;
   font-style: italic;
   font-size: 0.7rem;
 }
@@ -70,7 +70,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 80px;
-  top: 215px;
+  top: 210px;
 }
 .arrow-up-cart {
   display: none;
@@ -81,7 +81,7 @@ h2 {
   border-right: 20px solid transparent;
   border-top: 15px solid #fff;
   right: 24px;
-  top: 215px;
+  top: 210px;
 }
 label:hover{
   cursor: pointer;
@@ -102,7 +102,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 40px;
-  top: 55px;
+  top: 50px;
   border-radius: 5px;
   font-size: .9rem;
 }
@@ -122,7 +122,7 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 78px;
+  top: 73px;
   border-radius: 5px;
   font-size: .9rem;
 }
@@ -246,10 +246,10 @@ nav ul li a:hover,
 nav ul li a:focus {
   color: #401021;
 }
-#checkbox {
+#nav-checkbox {
   display: none;
 }
-#checkbox:checked ~ nav ul {
+#nav-checkbox:checked ~ nav ul {
   max-height: 250px;
   padding: 15px 0;
   transition: all 0.5s;
@@ -384,6 +384,78 @@ input:focus:-moz-placeholder {
 }
 .register-form a:hover {
   text-decoration: underline;
+}
+.members-menu{
+  list-style-type: none;
+  display: inline-flex;
+  justify-content: center;
+}
+.member-hero{
+  background: url("../images/pexels-vlad-bagacian-2819546_resized.jpg") no-repeat bottom;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 15px 0; 
+}
+.member-hero h2{
+  position: relative;
+  top: 60px;
+  left: 30px;
+  color: #0a3945;
+}
+.members-menu a{
+  color: #0a3945;
+  text-decoration: none;
+  margin-right: 15px;
+  
+}
+.members-menu a:hover{
+  text-decoration: underline;
+}
+.members-main{
+  text-align: center;
+}
+.perks-item{
+  margin: 40px 0;
+}
+.circular-economy-icon{
+  max-width: 50px;
+  margin: 20px 0;
+}
+.member-faq{
+  margin: 30px 0;
+}
+.member-faq h3{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.member-faq-list{
+  list-style-type: none;
+}
+.member-faq-list li{
+  text-decoration: none;
+}
+
+#faq-item-1{
+  display: none;
+}
+.fa-plus{
+  margin-left: 10px;
+}
+#faq-item-1 ~ p{
+  display: none;
+}
+#faq-item-1:checked ~ p{
+  display: block;
+}
+#faq-item-2{
+  display: none;
+}
+#faq-item-2 ~ p{
+  display: none;
+}
+#faq-item-2:checked ~ p{
+  display: block;
 }
 .product-list{
   margin: auto;
@@ -559,26 +631,26 @@ hr {
   }
   .arrow-up-login {
     right: 80px;
-    top: 215px;
+    top: 210px;
   }
   .arrow-up-cart {
     right: 24px;
-    top: 215px;
+    top: 210px;
   }
   .login-form {
     right: 40px;
-    top: 54px;
+    top: 50px;
     border-radius: 5px;
     font-size: 1rem;
   }
   .cart-form {
     right: 22px;
-    top: 76px;
+    top: 72px;
     border-radius: 5px;
     font-size: 1rem;
   }
   nav {
-    top: 330px;
+    top: 320px;
   }
   .main-content .hero img {
     /* max-width: 350px; */

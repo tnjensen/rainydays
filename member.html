@@ -4,15 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="RainyDays raingear collection, about us"
+      content="Raingear and outdoor clothing for men and women, ensuring your comfort in all weather conditions"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>RainyDays | About Us</title>
     <script
       src="https://kit.fontawesome.com/9e2630f249.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>RainyDays | Raincoats for Men and Women</title>
   </head>
   <body>
     <header>
@@ -22,8 +22,7 @@
             src="images/RainyDays_Logo_medium.png"
             class="site-logo"
             alt="Rainy Days Logo"
-          />
-        </a>
+        /></a>
         <div class="header-content">
           <div class="site-branding">
             <h1>All-purpose raincoats for men and women</h1>
@@ -60,7 +59,7 @@
                 <input type="checkbox" id="cart-btn" />
                 <div class="arrow-up-cart"></div>
                 <div class="cart-form" id="cart">
-                  <label>CART ITEMS</label>
+                  <label id="cart-label">CART ITEMS</label>
                   <hr />
                   <div>
                     <p>0 Items</p>
@@ -76,8 +75,8 @@
         </div>
         <!--header-aside-->
         <div class="menu-wrap">
-          <label for="nav-checkbox"
-            class="menu-icon"><i class="fas fa-bars"></i>
+          <label for="nav-checkbox" class="menu-icon"
+            ><i class="fas fa-bars"></i>
           </label>
           <input type="checkbox" id="nav-checkbox" />
           <nav>
@@ -118,67 +117,49 @@
     </header>
     <div class="wrapper">
       <main class="main-content">
-        <h1>About Us</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-          ipsum dolor sit amet.
-        </p>
-        <div class="about-list">
-          <div class="about-item">
-            <img src="images/avatar.svg" alt="Avatar image" />
-            <h2>Name Surname</h2>
-            <h3>CO-FOUNDER & CTO</h3>
-            <p>
-              Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <div class="about-social">
-              <ul>
-                <li><img src="images/Instagram.svg" alt="Instagram icon" /></li>
-                <li><img src="images/Facebook.svg" alt="Facebook icon" /></li>
-                <li><img src="images/Twitter.svg" alt="Twitter icon" /></li>
-              </ul>
-            </div>
-          </div>
-          <div class="about-item">
-            <img src="images/avatar.svg" alt="Avatar image" />
-            <h2>Name Surname</h2>
-            <h3>CO-FOUNDER & CTO</h3>
-            <p>
-              Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <div class="about-social">
-              <ul>
-                <li><img src="images/Instagram.svg" alt="Instagram icon" /></li>
-                <li><img src="images/Facebook.svg" alt="Facebook icon" /></li>
-                <li><img src="images/Twitter.svg" alt="Twitter icon" /></li>
-              </ul>
-            </div>
-          </div>
-          <div class="about-item">
-            <img src="images/avatar.svg" alt="Avatar image" />
-            <h2>Name Surname</h2>
-            <h3>CO-FOUNDER & CTO</h3>
-            <p>
-              Lorem ipsum dolor sit amet. At vero eos et accusam et justo duo
-              dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
-              sanctus est Lorem ipsum dolor sit amet.
-            </p>
-            <div class="about-social">
-              <ul>
-                <li><img src="images/Instagram.svg" alt="Instagram icon" /></li>
-                <li><img src="images/Facebook.svg" alt="Facebook icon" /></li>
-                <li><img src="images/Twitter.svg" alt="Twitter icon" /></li>
-              </ul>
-            </div>
-          </div>
+        <h1>RainyDays Membership Benefits</h1>
+        <ul class="members-menu">
+          <li><i class="fas fa-calendar"></i><a href="#perks">See membership benefits</a></li>
+          <li><i class="fas fa-table"></i><a href="#faq">Membership FAQ</a></li>
+        </ul>
+        <div class="member-hero">
+          <h2>Member's area</h2>
         </div>
+        <section class="members-main">
+          <h3>Get your lifetime membership here, at only $20.</h3>
+          <a href="checkout.html" class="cta cta-small"
+            >Add membership to cart</a
+          >
+        </section>
+        <section id="perks" class="perks-item">
+          <h3>Used gear trade-in program</h3>
+          <img
+            src="images/circular-economy.png"
+            class="circular-economy-icon"
+          />
+          <p>
+            Contribute to the circular economy by trading in your used gear.
+          </p>
+        </section>
+        <section class="member-faq" id="faq">
+          <h3>Membership FAQ</h3>
+          <ul class="member-faq-list">
+            <li class="member-faq-list-item faq-item-1">
+              <input type="checkbox" id="faq-item-1" />
+              <label for="faq-item-1"
+                >How do I find my member bonus balance ?<i class="fas fa-plus"></i></label
+              >
+              <p>Go online and login to find your bonus</p>
+            </li>
+            <li class="member-faq-list-item faq-item-2">
+                <input type="checkbox" id="faq-item-2" />
+                <label for="faq-item-2"
+                  >Can I transfer my membership bonus?<i class="fas fa-plus"></i></label
+                >
+                <p>No, your membership bonus is revoked in the event of termination.</p>
+              </li>
+          </ul>
+        </section>
       </main>
     </div>
     <!--wrapper-->
@@ -219,8 +200,10 @@
               ></a>
             </li>
           </ul>
-        </div><!--footer-nav-->
-      </div><!--footer-content-->
+        </div>
+        <!--footer-nav-->
+      </div>
+      <!--footer-content-->
     </footer>
     <script src="js/script.js"></script>
   </body>
