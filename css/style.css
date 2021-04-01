@@ -388,6 +388,9 @@ input:focus:-moz-placeholder {
 .register-form h3{
   margin-bottom: 10px;
 }
+.register-form label{
+  display: none;
+}
 .members-menu{
   list-style-type: none;
   display: inline-flex;
