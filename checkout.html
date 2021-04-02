@@ -84,7 +84,7 @@
           </nav>
           <div class="search">
             <ul>
-              <li><input class="search-field" placeholder="Search..." /></li>
+              <li><input class="search-field" placeholder="Search..." title="search-field"/></li>
               <li>
                 <a href="search.html" aria-label="Search" class="search-btn" title="search">
                   <i class="fas fa-search"></i></a>
@@ -107,21 +107,21 @@
                   <form>
                     <label>Full Name</label>
                     <div>
-                      <input type="text" placeholder="Full Name" required />
+                      <input type="text" placeholder="Full Name" title="fullname" required />
                     </div>
                     <label>Address</label>
                     <div>
-                      <input type="text" placeholder="Address" required />
+                      <input type="text" placeholder="Address" title="address" required />
                     </div>
                     <label>City</label>
                     <label class="zip">Zip</label>
                     <div>
-                      <input type="text" id="city" placeholder="City" required />
-                      <input type="text" id="zip" placeholder="Zip" required />
+                      <input type="text" id="city" placeholder="City" title="city" required />
+                      <input type="text" id="zip" placeholder="Zip" title="zip" required />
                     </div>
                     <label>Country</label>
                     <div>
-                      <select id="country" name="country">
+                      <select id="country" name="country" title="countries">
                           <option value="Afganistan">Afghanistan</option>
                           <option value="Albania">Albania</option>
                           <option value="Algeria">Algeria</option>
@@ -386,22 +386,23 @@
                         pattern="[0-9\s]{13,19}"
                         autocomplete="cc-number"
                         placeholder="xxxx xxxx xxxx xxxx"
+                        title="card-number"
                         required
                       />
                     </div>
                     <label>Cardholder Name</label>
                     <div>
-                      <input type="text" placeholder="Cardholder Name" required />
+                      <input type="text" placeholder="Cardholder Name" title="cardholder name" required />
                     </div>
                     <label>Expiry Date</label>
                     <div class="expiration">
-                      <input type="text" name="month" placeholder="MM" maxlength="2" required />
+                      <input type="text" name="month" placeholder="MM" maxlength="2" title="month-field" required />
                       <span>/</span>
-                      <input type="text" name="year" placeholder="YY" maxlength="2" required />
+                      <input type="text" name="year" placeholder="YY" maxlength="2" title="year-field" required />
                     </div>
                     <label>CCV</label>
                     <div>
-                      <input type="text" placeholder="CCV Code" required />
+                      <input type="text" placeholder="CCV Code" title="ccv-code-field" required />
                     </div>
                   </form>
                 </div>
