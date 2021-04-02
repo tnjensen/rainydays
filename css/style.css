@@ -83,7 +83,7 @@ h2 {
   right: 24px;
   top: 210px;
 }
-label:hover{
+.login-btn:hover, .cart-btn:hover{
   cursor: pointer;
 }
 .login-form {
@@ -122,12 +122,20 @@ label:hover{
   height: auto;
   background-color: #fffefe;
   right: 22px;
-  top: 73px;
+  top: 105px;
   border-radius: 5px;
   font-size: .9rem;
 }
-.cart-form p {
+.cart-form p{
   margin: 10px 0;
+}
+.cart-form a {
+  color: #0a3945;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.cart-form a:hover {
+  text-decoration: underline;
 }
 #cart-label{
   color: #0a3945;
@@ -142,6 +150,7 @@ label:hover{
 #cart-btn:checked ~ div{
   display: block;
 }
+
 input[type="text"],
 input[type="password"] {
   margin: 4px 0 7px 0;
@@ -349,6 +358,16 @@ input:focus:-moz-placeholder {
 .main-content h2{
   font-weight: 400;
 }
+.main-content a{
+  color: #401021;
+  text-decoration: none;
+}
+.main-content a:hover{
+  text-decoration: underline;
+}
+.learn-more{
+  margin-top: 5px;
+}
 .hero {
   background: url("../images/pexels-vlad-bagacian-2819551_resized.jpg") no-repeat center;
   background-size: cover;
@@ -497,7 +516,7 @@ input:focus:-moz-placeholder {
 }
 .cta-small:hover {
   background-color: #401021;
-  color: #c8bb21;
+  color: #efefef;
 }
 .addcart {
   padding: 16px 20px;
@@ -642,7 +661,7 @@ hr {
   }
   .arrow-up-cart {
     right: 24px;
-    top: 210px;
+    top: 204px;
   }
   .login-form {
     right: 40px;
@@ -652,7 +671,7 @@ hr {
   }
   .cart-form {
     right: 22px;
-    top: 72px;
+    top: 95px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -721,7 +740,7 @@ hr {
   }
   .cart-form {
     right: 22px;
-    top: 95px;
+    top: 127px;
     border-radius: 5px;
     font-size: 1rem;
   }
@@ -754,7 +773,15 @@ hr {
   .main-content {
     font-size: 0.9rem;
   }
-  .main-content .hero img {
+  .main-content-entry{
+    flex-direction: row;
+    width: 300px;
+  }
+  .main-content .cta-small:hover{
+    text-decoration: none;
+    
+  }
+  .hero img {
     margin: 25px 0;
     /* max-width: 400px; */
   }
