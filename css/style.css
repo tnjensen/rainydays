@@ -365,6 +365,10 @@ input:focus:-moz-placeholder {
 .main-content a:hover{
   text-decoration: underline;
 }
+.main-content .cta-small:hover{
+  text-decoration: none;
+  
+}
 .learn-more{
   margin-top: 5px;
 }
@@ -776,10 +780,6 @@ hr {
   .main-content-entry{
     flex-direction: row;
     width: 300px;
-  }
-  .main-content .cta-small:hover{
-    text-decoration: none;
-    
   }
   .hero img {
     margin: 25px 0;
