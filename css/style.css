@@ -83,7 +83,7 @@ h2 {
   right: 24px;
   top: 210px;
 }
-.login-btn:hover, .cart-btn:hover{
+.login-btn:hover, .cart-btn:hover, .menu-icon:hover{
   cursor: pointer;
 }
 .login-form {
@@ -131,7 +131,7 @@ h2 {
 }
 .cart-form a {
   color: #0a3945;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-decoration: none;
 }
 .cart-form a:hover {
@@ -604,6 +604,43 @@ hr {
 .confirm-order{
   text-align: center;
   margin-right: 10px;
+}
+.shipping-content{
+  margin: 15px;
+}
+.shipping-content h1{
+  text-align: center;
+}
+.shipping-table{
+  margin: 10px 0;
+  display: grid;
+  height: auto;
+  background: #fff;
+  padding: 10px 0;
+  grid-template-columns: repeat(2,1fr);
+}
+.shipping-item h3{
+  border-bottom: 2px solid #000;
+  margin: 10px 0;
+}
+.shipping-item{
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shipping-item p:first-of-type{
+  background-color: lightgray;
+}
+.returns-main-content{
+  padding: 15px 0;
+  margin: 10px;
+}
+.returns-main-content h3{
+  margin: 10px 0;
+}
+.privacy-main-content{
+  margin: 15px;
 }
 .footer {
   background-color: #0a3945;
