@@ -663,6 +663,23 @@ hr {
     -webkit-hyphens: auto;
     hyphens: auto;
 }
+.testimonials{
+  margin: 30px;
+  background:#1fa9cc;
+  display: flex;
+  padding: 20px;
+  font-style: italic;
+}
+.testimonials p:before{
+  content: '"';
+}
+.testimonials p:after{
+  content: '"';
+}
+.testimonials-hero{
+  flex: 0 1 50%;
+  margin: 15px;
+}
 .footer {
   background-color: #0a3945;
 }
