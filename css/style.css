@@ -683,7 +683,8 @@ hr {
   content: '"';
 }
 .testimonials-hero{
-  margin: 10px 25px 10px 10px;
+  flex: 1 0 50%;
+  margin: 10px;
 }
 .footer {
   background-color: #0a3945;
