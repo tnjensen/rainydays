@@ -664,10 +664,16 @@ hr {
     hyphens: auto;
 }
 .testimonials{
-  margin: 30px;
+  max-width: 600px;
+  border: 2px solid #c8bb21;
+  margin:auto;
   background:#1fa9cc;
   display: flex;
+  place-items: center;
+  justify-content: space-between;
   padding: 20px;
+  position: relative;
+  top :50px;
   font-style: italic;
 }
 .testimonials p:before{
@@ -677,8 +683,7 @@ hr {
   content: '"';
 }
 .testimonials-hero{
-  flex: 0 1 50%;
-  margin: 15px;
+  margin: 10px 25px 10px 10px;
 }
 .footer {
   background-color: #0a3945;
