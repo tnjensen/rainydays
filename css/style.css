@@ -663,18 +663,21 @@ hr {
     -webkit-hyphens: auto;
     hyphens: auto;
 }
-.testimonials{
+.testimonials h3{
+  text-align: center;
+  margin: 20px 0;
+}
+.testimonials-content{
   max-width: 600px;
   border: 2px solid #c8bb21;
-  margin:auto;
+  margin: auto;
   background:#1fa9cc;
   display: flex;
   place-items: center;
   justify-content: space-between;
   padding: 20px;
-  position: relative;
-  top :50px;
   font-style: italic;
+  margin-bottom: 10px;
 }
 .testimonials p:before{
   content: '"';
@@ -685,6 +688,7 @@ hr {
 .testimonials-hero{
   flex: 1 0 50%;
   margin: 10px;
+  text-align: center;
 }
 .footer {
   background-color: #0a3945;
