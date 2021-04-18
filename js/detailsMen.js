@@ -25,7 +25,6 @@ productContainer.innerHTML = `<h1>Title</h1>
         <button class="counter-plus-btn"><h2>+</h2></button>
         </div>
         <div>
-        <a href="checkout.html" class="addcart cta-small">Add to Cart</a>
+        <a href="cart.html" class="addcart cta-small">Add to Cart</a>
         </div>
-    </div> 
-    <section>`
+    </div>`
