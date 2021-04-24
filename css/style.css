@@ -29,7 +29,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   background-color: #1fa9cc;
-  color:#0a3945;
+  color: #0a3945;
   font-size: 0.8rem;
 }
 h1,
@@ -37,13 +37,13 @@ h2 {
   font-family: Merriweather, Georgia, "Times New Roman", Times, serif;
   margin: 10px 0;
 }
-.wrapper{
+.wrapper {
   min-height: 100vh;
 }
-.site-header a{
+.site-header a {
   max-width: 200px;
 }
-.site-logo{
+.site-logo {
   margin: 25px 30px;
   max-width: 150px;
   margin-bottom: 0;
@@ -83,16 +83,19 @@ h2 {
   right: 24px;
   top: 210px;
 }
-.login-btn:hover, .cart-btn:hover, .menu-icon:hover{
+.login-btn:hover,
+.cart-btn:hover,
+.menu-icon:hover,
+.cta-small:hover {
   cursor: pointer;
 }
 .login-form {
   display: none;
 }
-#login-btn{
+#login-btn {
   display: none;
 }
-#login-btn:checked ~ div{
+#login-btn:checked ~ div {
   display: block;
 }
 .login-form {
@@ -104,7 +107,7 @@ h2 {
   right: 40px;
   top: 50px;
   border-radius: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 .login-form a {
   color: #0a3945;
@@ -124,9 +127,9 @@ h2 {
   right: 22px;
   top: 105px;
   border-radius: 5px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
-.cart-form p{
+.cart-form p {
   margin: 10px 0;
 }
 .cart-form a {
@@ -137,17 +140,17 @@ h2 {
 .cart-form a:hover {
   text-decoration: underline;
 }
-#cart-label{
+#cart-label {
   color: #0a3945;
 }
-#cart-btn{
+#cart-btn {
   display: none;
 }
-.fa-shopping-cart{
+.fa-shopping-cart {
   color: #fffefe;
   margin-left: 2px;
 }
-#cart-btn:checked ~ div{
+#cart-btn:checked ~ div {
   display: block;
 }
 
@@ -324,7 +327,7 @@ input:focus:-moz-placeholder {
 .secondary-nav {
   margin-right: 10px;
 }
-.secondary-nav label{
+.secondary-nav label {
   color: #0a3945;
   font-weight: 500;
 }
@@ -334,7 +337,7 @@ input:focus:-moz-placeholder {
 .secondary-nav ul li {
   display: inline-flex;
 }
-.secondary-nav ul li{
+.secondary-nav ul li {
   margin-right: 5px;
   text-decoration: none;
 }
@@ -355,29 +358,32 @@ input:focus:-moz-placeholder {
 .main-content h1 {
   align-self: center;
 }
-.main-content h2{
+.main-content h2 {
   font-weight: 400;
 }
-.main-content a{
+.main-content a {
   color: #401021;
   text-decoration: none;
 }
-.main-content a:hover{
+.main-content a:hover {
   text-decoration: underline;
 }
-.main-content .cta-small:hover{
+.main-content .cta-small:hover {
   text-decoration: none;
-  
 }
-.learn-more{
+.main-content .cta-sale{
+  color: #c8bb21;
+}
+.learn-more {
   margin-top: 5px;
 }
 .hero {
-  background: url("../images/pexels-vlad-bagacian-2819551_resized.jpg") no-repeat center;
+  background: url("../images/pexels-vlad-bagacian-2819551_resized.jpg")
+    no-repeat center;
   background-size: cover;
   width: 100%;
   height: 500px;
-  margin: 15px 0; 
+  margin: 15px 0;
 }
 .register-form {
   animation: newsletter 1s forwards;
@@ -390,13 +396,13 @@ input:focus:-moz-placeholder {
   height: auto;
   background-color: #fffefe;
   border-radius: 5px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-@keyframes newsletter{
-  0%{
-    left:-1000px;
+@keyframes newsletter {
+  0% {
+    left: -1000px;
   }
-  100%{
+  100% {
     left: 0px;
   }
 }
@@ -408,94 +414,134 @@ input:focus:-moz-placeholder {
 .register-form a:hover {
   text-decoration: underline;
 }
-.register-form h3{
+.register-form h3 {
   margin-bottom: 10px;
 }
-.members-menu{
+.cart {
+  border: 1px solid #c8bb21;
+  max-width: 600px;
+  min-width: 200px;
+  padding: 20px;
+  position: fixed;
+  right: 50px;
+  top: 50px;
+  background: #fff;
+  flex-direction: column;
+  display: none;
+}
+.cart-image{
+  max-width: 50px;
+}
+.cart-page{
+  max-width: 400px;
+  margin: 0 auto;
+  background: #efefef;
+  border-radius: 20px 0px;
+  padding: 20px;
+}
+.cart-item{
+  padding: 10px 0;
+}
+.cart-item img{
+  max-width: 70px;
+}
+.checkout-btn.cta-small {
+  position: relative;
+  top: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.members-menu {
   list-style-type: none;
   display: inline-flex;
   justify-content: center;
 }
-.member-hero{
-  background: url("../images/pexels-vlad-bagacian-2819546_resized.jpg") no-repeat bottom;
+.member-hero {
+  background: url("../images/pexels-vlad-bagacian-2819546_resized.jpg")
+    no-repeat bottom;
   background-size: cover;
   width: 100%;
   height: 500px;
-  margin: 15px 0; 
+  margin: 15px 0;
 }
-.member-hero h2{
+.member-hero h2 {
   position: relative;
   top: 60px;
   left: 30px;
   color: #0a3945;
 }
-.members-menu a{
+.members-menu a {
   color: #0a3945;
   text-decoration: none;
   margin-right: 15px;
-  
 }
-.members-menu a:hover{
+.members-menu a:hover {
   text-decoration: underline;
 }
-.members-main{
+.members-main {
   text-align: center;
 }
-.perks-item{
+.perks-item {
   margin: 40px 0;
 }
-.circular-economy-icon{
+.circular-economy-icon {
   max-width: 50px;
   margin: 20px 0;
 }
-.member-faq{
+.member-faq {
   margin: 30px 0;
 }
-.member-faq h3{
+.member-faq h3 {
   text-align: center;
   margin-bottom: 10px;
 }
-.member-faq-list{
+.member-faq-list {
   list-style-type: none;
 }
-.member-faq-list li{
+.member-faq-list li {
   text-decoration: none;
 }
 
-#faq-item-1{
+#faq-item-1 {
   display: none;
 }
-.fa-plus{
+.fa-plus {
   margin-left: 10px;
 }
-#faq-item-1 ~ p{
+#faq-item-1 ~ p {
   display: none;
 }
-#faq-item-1:checked ~ p{
+#faq-item-1:checked ~ p {
   display: block;
   background-color: #c8bb21;
   color: #401021;
 }
-#faq-item-2{
+#faq-item-2 {
   display: none;
 }
-#faq-item-2 ~ p{
+#faq-item-2 ~ p {
   display: none;
 }
-#faq-item-2:checked ~ p{
+#faq-item-2:checked ~ p {
   display: block;
   background-color: #c8bb21;
   color: #401021;
 }
-.product-list{
+.product-list {
   margin: auto;
 }
-.product-list-item{
+.product-list-item {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
 .product-list-item img {
   max-width: 150px;
+}
+.product-list-item h3{
+  max-width: 50%;
+  margin-bottom: 10px;
 }
 .product-detail {
   padding: 20px;
@@ -507,7 +553,7 @@ input:focus:-moz-placeholder {
 .icons-aside img {
   margin: 10px 5px 5px 0;
 }
-.cta-small{
+.cta-small {
   text-decoration: none;
   padding: 5px 10px;
   font-weight: 600;
@@ -520,8 +566,24 @@ input:focus:-moz-placeholder {
 }
 .cta-small:hover {
   background-color: #401021;
-  color: #efefef;
+  color: #c8bb21;
 }
+.cta-sale {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: #c8bb21;
+  background-color: #401021;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+  top: 15px;
+}
+.cta-sale:hover {
+  background-color: #c8bb21;
+  color: #401021;
+}
+
 .addcart {
   padding: 16px 20px;
   position: relative;
@@ -561,7 +623,7 @@ input:focus:-moz-placeholder {
 .checkout-list-item h2 {
   margin-bottom: 10px;
 }
-.checkout-list-buttons{
+.checkout-list-buttons {
   margin: 0 0 10px 0;
 }
 .billing-form div {
@@ -601,77 +663,76 @@ hr {
 .contact-location {
   margin: 20px 0;
 }
-.confirm-order{
+.confirm-order {
   text-align: center;
   margin-right: 10px;
 }
-.shipping-content{
+.shipping-content {
   margin: 15px;
 }
-.shipping-content h1{
+.shipping-content h1 {
   text-align: center;
 }
-.shipping-table{
+.shipping-table {
   margin: 10px 0;
   display: grid;
   height: auto;
   background: #fff;
   padding: 10px 0;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
-.shipping-item h3{
+.shipping-item h3 {
   border-bottom: 2px solid #000;
   margin: 10px 0;
 }
-.shipping-item{
+.shipping-item {
   line-height: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.shipping-item p:first-of-type{
+.shipping-item p:first-of-type {
   background-color: lightgray;
 }
-.returns-main-content{
+.returns-main-content {
   padding: 15px 0;
   margin: 10px;
 }
-.returns-main-content h3{
+.returns-main-content h3 {
   margin: 10px 0;
 }
-.privacy-main-content{
+.privacy-main-content {
   margin: 15px;
 }
-.privacy-main-content ul{
+.privacy-main-content ul {
   list-style-type: none;
 }
-.flash a{
+.flash a {
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 
-    /* These are technically the same, but use both */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  
-    -ms-word-break: break-all;
-    /* This is the dangerous one in WebKit, as it breaks things wherever */
-    word-break: break-all;
-    /* Instead use this non-standard one: */
-    word-break: break-word;
-  
-    /* Adds a hyphen where the word breaks, if supported (No Blink) */
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
-.testimonials h3{
+.testimonials h3 {
   text-align: center;
   margin: 20px 0;
 }
-.testimonials-content{
+.testimonials-content {
   max-width: 600px;
   border: 2px solid #c8bb21;
   margin: auto;
-  background:#1fa9cc;
+  background: #1fa9cc;
   display: flex;
   place-items: center;
   justify-content: space-between;
@@ -679,13 +740,13 @@ hr {
   font-style: italic;
   margin-bottom: 10px;
 }
-.testimonials p:before{
+.testimonials p:before {
   content: '"';
 }
-.testimonials p:after{
+.testimonials p:after {
   content: '"';
 }
-.testimonials-hero{
+.testimonials-hero {
   flex: 1 0 50%;
   margin: 10px;
   text-align: center;
@@ -729,16 +790,16 @@ hr {
   text-decoration: underline;
   color: #c8bb21;
 }
-.footer a{
+.footer a {
   color: #fffefe;
   text-decoration: none;
 }
-.footer a:hover{
+.footer a:hover {
   text-decoration: underline;
 }
 @media screen and (min-width: 400px) and (max-width: 599px) {
-  body{
-    font-size: .9rem;
+  body {
+    font-size: 0.9rem;
   }
   .site-logo {
     max-width: 200px;
@@ -771,7 +832,7 @@ hr {
     /* max-width: 350px; */
     margin: 25px 0 25px;
   }
-  .register-form{
+  .register-form {
     margin: 20px;
   }
   .product-list {
@@ -805,7 +866,7 @@ hr {
   }
   .site-logo {
     max-width: 250px;
-    margin: 25px 0 10px 40px
+    margin: 25px 0 10px 40px;
   }
   .site-branding {
     margin: 10px 0 0 25px;
@@ -862,7 +923,7 @@ hr {
   .main-content {
     font-size: 0.9rem;
   }
-  .main-content-entry{
+  .main-content-entry {
     flex-direction: row;
     width: 300px;
   }
@@ -870,12 +931,12 @@ hr {
     margin: 25px 0;
     /* max-width: 400px; */
   }
-  .register-form{
+  .register-form {
     margin: 20px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  .register-form a{
-    font-size: .9rem;
+  .register-form a {
+    font-size: 0.9rem;
   }
   .product-list {
     display: flex;
@@ -902,13 +963,12 @@ hr {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .checkout-list-buttons{
+  .checkout-list-buttons {
     flex: 0 0 100%;
     text-align: center;
     margin: 0 0 20px 0;
-    
   }
-  .cancel{
+  .cancel {
     margin-right: 20px;
   }
   #embedmap {
@@ -921,13 +981,12 @@ hr {
   }
 }
 @media screen and (min-width: 800px) {
-  body{
+  body {
     font-size: 1rem;
   }
   .site-logo {
     max-width: 300px;
     margin: 30px 0 25px 40px;
-    
   }
   .site-header {
     display: grid;
@@ -1013,11 +1072,11 @@ hr {
   #h1-home {
     align-self: flex-start;
   }
-  .register-form{
+  .register-form {
     margin: 20px;
     font-size: 1rem;
   }
-  .register-form a{
+  .register-form a {
     font-size: 1rem;
   }
   .product-list {
@@ -1051,20 +1110,20 @@ hr {
     width: 28px;
     margin: 10px 7px 10px 0;
   }
- .checkout-list {
+  .checkout-list {
     flex-direction: row;
   }
- .checkout-list-buttons{
-   flex: 0 0 100%;
-   text-align: center;
-   margin: 5px 30px 25px 0;
- }
- .checkout{
-  margin:0 0 0 30px;
-}
-.cancel{
-  margin: 0;
-}
+  .checkout-list-buttons {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 5px 30px 25px 0;
+  }
+  .checkout {
+    margin: 0 0 0 30px;
+  }
+  .cancel {
+    margin: 0;
+  }
   .about-list {
     display: inline-flex;
   }
@@ -1075,11 +1134,11 @@ hr {
     width: 450px !important;
     height: 450px !important;
   }
-  #embedmap-canvas img{
-    max-width:none!important;
-    background:none!important;
+  #embedmap-canvas img {
+    max-width: none !important;
+    background: none !important;
     font-size: inherit;
-    font-weight:inherit;
+    font-weight: inherit;
   }
   .confirm-order button {
     margin-right: 20px;
@@ -1101,6 +1160,5 @@ hr {
   }
   .footer-nav {
     margin: 0 20px;
-  } 
+  }
 }
-

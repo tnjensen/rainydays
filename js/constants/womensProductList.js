@@ -1,7 +1,7 @@
 export const womensProducts =[
     {
-        name: "A very nice raincoat",
-        price: 60,
+        name: "Title",
+        price: "Price",
         image: "../images/raincoat_female_small.png",
         id:1,
         description:"Stylish rain-coat for urban living",
@@ -9,8 +9,8 @@ export const womensProducts =[
         sales: true
     },
     {
-        name: "Durable raincoat",
-        price: 70,
+        name: "Title",
+        price: "Price",
         image: "../images/raincoat_female_small.png",
         id:2,
         description:"Comfortable rain-coat for all outdoor activities",
@@ -18,8 +18,8 @@ export const womensProducts =[
         sales: false
     },
     {
-        name: "A stylish raincoat",
-        price: 75,
+        name: "Title",
+        price: "Price",
         image: "../images/raincoat_female_small.png",
         id:3,
         description:"All-purpose rain coat",
@@ -27,8 +27,8 @@ export const womensProducts =[
         sales: false
     },
     {
-        name: "A trendy raincoat",
-        price: 80,
+        name: "Title",
+        price: "Price",
         image: "../images/raincoat_female_small.png",
         id:4,
         description:"High-performing rain-coat for the active",

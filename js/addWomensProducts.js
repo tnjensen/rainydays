@@ -1,3 +1,4 @@
+import { womensProducts } from "./womens.js";
 const jacketsContainer = document.querySelector('.product-list');
 
 for(var i = 0; i < womensProducts.length; i++){
@@ -8,7 +9,7 @@ for(var i = 0; i < womensProducts.length; i++){
     jacketsContainer.innerHTML += `<div class="product-list-item">
     <img src="${womensProducts[i].image}" alt="${womensProducts[i].description}" />
     <h2>${womensProducts[i].name}</h2>
-    <p>${womensProducts[i].price}</p>
+    <p>Price: $${womensProducts[i].price}</p>
     ${productLink}
     </div>`
 }

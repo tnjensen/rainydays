@@ -1,38 +1,38 @@
-export const womensProducts =[
+const mensProducts = [
     {
-        name: "A very nice raincoat",
-        price: 60,
-        image: "../images/raincoat_female_small.png",
+        name: "Male raincoat",
+        price: 65,
+        image: "../images/raincoat_male_small.png",
         id:1,
         description:"Stylish rain-coat for urban living",
         featured: true,
-        sales: true
+        sales: false
     },
     {
-        name: "Durable raincoat",
+        name: "Male raincoat",
         price: 70,
-        image: "../images/raincoat_female_small.png",
+        image: "../images/raincoat_male_small.png",
         id:2,
         description:"Comfortable rain-coat for all outdoor activities",
         featured: true,
         sales: false
     },
     {
-        name: "A stylish raincoat",
+        name: "Male raincoat",
         price: 75,
-        image: "../images/raincoat_female_small.png",
+        image: "../images/raincoat_male_small.png",
         id:3,
         description:"All-purpose rain coat",
         featured: true,
         sales: false
     },
     {
-        name: "A trendy raincoat",
+        name: "Male raincoat",
         price: 80,
-        image: "../images/raincoat_female_small.png",
+        image: "../images/raincoat_male_small.png",
         id:4,
         description:"High-performing rain-coat for the active",
         featured: true,
-        sales: false
+        sales: true
     },
 ]
