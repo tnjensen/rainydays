@@ -34,8 +34,9 @@ productContainer.innerHTML = `<h1>${product.name}</h1>
     const button = document.querySelector(".addcart");
 
     button.onclick = function(event){
-        const itemToAdd = mensProducts.find(item => productId === event.target.dataset.product);
-        //console.log(event.target.dataset.product);
+        //const itemToAdd = mensProducts.find(item => productId === event.target.dataset.product);
+        const itemToAdd = product;
+        //console.log(product);
         cartArray.push(itemToAdd);
         showCart(cartArray);
         localStorage.setItem("cartList", JSON.stringify(cartArray));

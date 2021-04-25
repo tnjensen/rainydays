@@ -34,5 +34,5 @@ export const womensProducts =[
         description:"High-performing rain-coat for the active",
         featured: true,
         sales: false
-    },
+    }
 ]

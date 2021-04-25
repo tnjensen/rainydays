@@ -1,6 +1,6 @@
 export const mensProducts = [
     {
-        name: "Male raincoat",
+        name: "Male basic raincoat",
         price: 60,
         image: "../images/raincoat_male_small.png",
         id:1,
@@ -9,7 +9,7 @@ export const mensProducts = [
         sales: false
     },
     {
-        name: "Male raincoat",
+        name: "Male stylish raincoat",
         price: 70,
         image: "../images/raincoat_male_small.png",
         id:2,
@@ -18,7 +18,7 @@ export const mensProducts = [
         sales: false
     },
     {
-        name: "Male raincoat",
+        name: "Male hiking raincoat",
         price: 75,
         image: "../images/raincoat_male_small.png",
         id:3,
@@ -27,12 +27,12 @@ export const mensProducts = [
         sales: false
     },
     {
-        name: "Male raincoat",
+        name: "Male high-performing raincoat",
         price: 80,
         image: "../images/raincoat_male_small.png",
         id:4,
         description:"High-performing rain-coat for the active",
         featured: true,
         sales: true
-    },
+    }
 ]

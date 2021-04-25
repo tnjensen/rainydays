@@ -98,11 +98,16 @@
     </header>
     <div class="wrapper">
       <main class="main-content">
-          <h1>Checkout Page</h1>
-          <div class="checkout-list">
-           
+          <h1>Shopping Cart</h1>
+          <div class="cart-page">
+            <div class="cart-list"></div>
+            <div class="total"></div>
+            <!--<a href="checkout.html" class="cta cta-small">Checkout</a>-->  
+          </div>
+          <div class="checkout-list">   
+            <h2>Checkout</h2>
               <div class="checkout-list-item">
-                <h2>Billing Info</h2>
+                <h3>Billing Info</h3>
                 <div class="billing-form" id="billing">
                   <form>
                     <label>Full Name</label>
@@ -374,7 +379,7 @@
                 </div><!--billing-form-->
               </div><!--checkout-list-item-->
               <div class="checkout-list-item">
-                <h2>Credit Card Info</h2>
+                <h3>Credit Card Info</h3>
                 <div class="credit-card-form" id="credit-card">
                   <form>
                       <label for="ccn">Card number</label>
@@ -455,5 +460,6 @@
       </div><!--footer-content-->
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/cart.js" type="module"></script>
   </body>
 </html>
