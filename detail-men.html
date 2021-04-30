@@ -28,41 +28,43 @@
         <div class="header-aside">
           <div class="secondary-nav">
             <ul>
-              <li><label for="login-btn" class="login-btn">Login</label>
-              <input type="checkbox" id="login-btn">
-              <div class="arrow-up-login"></div>
-              <div class="login-form">
-                <form>
-                  <div>
-                    <input type="text" placeholder="Your Email" required />
-                  </div>
-                  <div>
-                    <input type="password" placeholder="Password" required />
-                  </div>
-                  <div>
-                    <input type="submit" value="Log In" />
-                  </div>
-                  <div>
-                    <a href="#">Lost your password ?</a>
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li>
-              <label for="cart-btn" class="cart-btn">Cart <i class="fas fa-shopping-cart"></i
+              <li>
+                <label for="login-btn" class="login-btn">Login</label>
+                <input type="checkbox" id="login-btn" />
+                <div class="arrow-up-login"></div>
+                <div class="login-form">
+                  <form>
+                    <div>
+                      <input type="text" placeholder="Your Email" required />
+                    </div>
+                    <div>
+                      <input type="password" placeholder="Password" required />
+                    </div>
+                    <div>
+                      <input type="submit" value="Log In" />
+                    </div>
+                    <div>
+                      <a href="#">Lost your password ?</a>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label for="cart-btn" class="cart-btn"
+                  >Cart <i class="fas fa-shopping-cart"></i
                 ></label>
-              <input type="checkbox" id="cart-btn">
-              <div class="arrow-up-cart"></div>
-              <div class="cart-form" id="cart">
-                <h4 id=cart-label>CART ITEMS</h4>
-                <hr />
-                <div>
-                  <p>0 Items</p>
+                <input type="checkbox" id="cart-btn" />
+                <div class="arrow-up-cart"></div>
+                <div class="cart-form" id="cart">
+                  <h4 id="cart-label">CART ITEMS</h4>
+                  <hr />
+                  <div>
+                    <p>0 Items</p>
+                  </div>
+                  <div>
+                    <a href="checkout.html" class="cta view-cart">View cart</a>
+                  </div>
                 </div>
-                <div>
-                  <a href="cart.html" class="cta view-cart">View cart</a>
-                </div>
-              </div>
               </li>
             </ul>
           </div>
@@ -70,9 +72,9 @@
         </div>
         <!--header-aside-->
         <div class="menu-wrap">
-          <label for="nav-checkbox"
-          class="menu-icon"><i class="fas fa-bars"></i>
-        </label>
+          <label for="nav-checkbox" class="menu-icon"
+            ><i class="fas fa-bars"></i>
+          </label>
           <input type="checkbox" id="nav-checkbox" />
           <nav>
             <ul>
@@ -85,23 +87,33 @@
           </nav>
           <div class="search">
             <ul>
-              <li><input class="search-field" placeholder="Search..." aria-label="search-field" /></li>
               <li>
-                <a href="search.html" aria-label="Search" class="search-btn" title="search">
-                  <i class="fas fa-search"></i></a>
+                <input
+                  class="search-field"
+                  placeholder="Search..."
+                  aria-label="search-field"
+                />
+              </li>
+              <li>
+                <a
+                  href="search.html"
+                  aria-label="Search"
+                  class="search-btn"
+                  title="search"
+                >
+                  <i class="fas fa-search"></i
+                ></a>
               </li>
             </ul>
-          </div><!--search-->
+          </div>
+          <!--search-->
         </div>
         <!--menu-wrap-->
       </div>
       <!--site-header-->
-      
     </header>
     <div class="wrapper">
-      <main class="product-detail">  
-           
-      </main>
+      <main class="product-detail"></main>
       <div class="cart">
         <div class="cart-list"></div>
         <div class="total">Total:</div>
@@ -144,8 +156,10 @@
               ></a>
             </li>
           </ul>
-        </div><!--footer-nav-->
-      </div><!--footer-content-->
+        </div>
+        <!--footer-nav-->
+      </div>
+      <!--footer-content-->
     </footer>
     <script src="js/script.js"></script>
     <script src="js/mens.js" type="module"></script>
