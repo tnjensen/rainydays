@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Raingear and outdoor clothing for men and women, ensuring your comfort in all weather conditions"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9e2630f249.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title>RainyDays | Raincoats for Men and Women</title>
+  </head>
+  <body>
+    <header>
+      <div class="site-header">
+        <a href="index.html">
+          <img
+            src="images/RainyDays_Logo_medium.png"
+            class="site-logo"
+            alt="Rainy Days Logo"
+          />
+        </a>
+        <div class="header-content">
+          <div class="site-branding">
+            <h1>All-purpose raincoats for men and women</h1>
+          </div>
+        </div>
+        <div class="header-aside">
+          <div class="secondary-nav">
+            <ul>
+              <li>
+                <label for="login-btn" class="login-btn">Login</label>
+                <input type="checkbox" id="login-btn" />
+                <div class="arrow-up-login"></div>
+                <div class="login-form">
+                  <form>
+                    <div>
+                      <input type="text" placeholder="Your Email" required />
+                    </div>
+                    <div>
+                      <input type="password" placeholder="Password" required />
+                    </div>
+                    <div>
+                      <input type="submit" value="Log In" />
+                    </div>
+                    <div>
+                      <a href="#">Lost your password ?</a>
+                    </div>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <label for="cart-btn" class="cart-btn">
+                  Cart
+                  <i class="fas fa-shopping-cart"></i>
+                </label>
+                <input type="checkbox" id="cart-btn" />
+                <div class="arrow-up-cart"></div>
+                <div class="cart-form" id="cart">
+                  <h4 id="cart-label">CART ITEMS</h4>
+                  <hr />
+                  <div>
+                    <p>0 Items</p>
+                  </div>
+                  <div>
+                    <a href="checkout.html" class="cta view-cart">View cart</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!--secondary-nav-->
+        </div>
+        <!--header-aside-->
+        <div class="menu-wrap">
+          <label for="nav-checkbox" class="menu-icon">
+            <i class="fas fa-bars"></i>
+          </label>
+          <input type="checkbox" id="nav-checkbox" />
+          <nav>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="men.html">MEN'S</a></li>
+              <li><a href="women.html">WOMEN'S</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu-wrap-->
+      </div>
+      <!--site-header-->
+    </header>
+    <div class="wrapper">
+      <main class="main-content-search">
+        <h1>Search results for <span class="search-term"></span></h1>
+        <div class="search">
+            
+                <input
+                  id="searchInput"
+                  class="search-field"
+                  placeholder="Search..."
+                  aria-label="search-field"
+                />
+             
+                <button class="search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+          </div>
+          <!--search-->
+          <div class="search-results"></div>
+      </main>
+    </div>
+    <!--wrapper-->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-category">CONTACT</div>
+        <div>
+          +44 345 678 903
+          <p><a href="mailto:rainydays@mail.com">rainydays@mail.com</a></p>
+          <p><a href="contact.html">Find a Store</a></p>
+        </div>
+        <div class="footer-category">SERVICES</div>
+        <div>
+          <a href="shipping.html">Shipping</a>
+          <p><a href="returns.html">Returns</a></p>
+        </div>
+        <div class="footer-category">INFORMATION</div>
+        <div>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com" aria-label="Instagram">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" aria-label="Twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" aria-label="FaceBook">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--footer-nav-->
+      </div>
+      <!--footer-content-->
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
