@@ -95,11 +95,18 @@ h2 {
 #login-btn {
   display: none;
 }
+
 /* #login-btn:checked ~ div {
   display: block;
 } */
 .visible ~ div{
   display: block;
+}
+.menu-icon.visible ~ nav ul{
+  display: block;
+  max-height: 250px;
+  padding: 15px 0;
+  transition: all 0.5s;
 }
 .login-form {
   padding: 10px;
@@ -231,8 +238,7 @@ select#country {
 .menu-icon {
   font-size: 2.1em;
   color: #ffffff;
-  line-height: 50px;
-  margin: 0 10px;
+  margin: 15px 25px;
 }
 nav {
   position: absolute;
@@ -266,14 +272,6 @@ nav ul li a:focus {
 nav ul li a:hover,
 nav ul li a:focus {
   color: #401021;
-}
-#nav-checkbox {
-  display: none;
-}
-#nav-checkbox:checked ~ nav ul {
-  max-height: 250px;
-  padding: 15px 0;
-  transition: all 0.5s;
 }
 i {
   margin-right: 7px;
@@ -461,7 +459,6 @@ input:focus:-moz-placeholder {
   font-weight: bold;
   text-decoration: none;
 }
-
 .members-menu {
   list-style-type: none;
   display: inline-flex;
@@ -592,7 +589,6 @@ input:focus:-moz-placeholder {
   background-color: #c8bb21;
   color: #401021;
 }
-
 .addcart {
   padding: 16px 20px;
   position: relative;
@@ -1038,7 +1034,7 @@ hr {
   .secondary-nav {
     margin-right: 20px;
   }
-  .menu-icon {
+  .menu-icon{
     display: none;
   }
   nav {

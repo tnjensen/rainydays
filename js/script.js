@@ -1,5 +1,6 @@
 var links = document.querySelector('nav a [href="'+document.URL+'"]');
 const dropItem = document.querySelectorAll('.has-dropdown');
+const menuBtn = document.querySelector('.menu-icon');
 
 for (var i = 0; i < document.links.length; i++) {
     if (document.links[i].href == document.URL) {
@@ -29,8 +30,15 @@ window.addEventListener('mouseup', function(event){
         dropItem[i].classList.remove('visible');
         }
       }
+  if(!event.target.closest('.menu-icon')){
+    menuBtn.classList.remove('visible');
+  }
 })
 
+menuBtn.addEventListener('click', function(event){
+  menuBtn.classList.toggle('visible');
+ /*  console.log(event.target); */
+})
 /* $(document).ready(function(){
   var arrowLogin = $(".arrow-up-login");
   var arrowRegister = $(".arrow-up-register");
