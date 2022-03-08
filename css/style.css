@@ -169,7 +169,10 @@ input[type="password"] {
   opacity: 0.7;
 }
 input[type="submit"] {
-  width: 75px;
+  /* width: 75px; */
+  position: relative;
+  right: -75px;
+  top: 15px;
   height: 25px;
   color: #401021;
   margin: 10px 0 15px 0;
@@ -568,7 +571,7 @@ input:focus:-moz-placeholder {
   border-radius: 5px;
   border: none;
   position: relative;
-  top: 15px;
+  top: 25px;
 }
 .cta-small:hover {
   background-color: #401021;
@@ -613,6 +616,9 @@ input:focus:-moz-placeholder {
   padding-top: 10px;
 }
 .cancel {
+  position: relative;
+  left: -30px;
+  top: -30px;
   background-color: #1fa9cc;
   color: #fffefe;
   margin: 0 10px 0 0;
@@ -628,9 +634,6 @@ input:focus:-moz-placeholder {
 }
 .checkout-list-item h3 {
   margin-bottom: 10px;
-}
-.checkout-list-buttons {
-  margin: 0 0 10px 0;
 }
 .billing-form div {
   padding: 3px 0 5px 0;
@@ -974,8 +977,13 @@ hr {
     text-align: center;
     margin: 0 0 20px 0;
   }
+  input[type="submit"]{
+    position: relative;
+    left: 0;
+  }
   .cancel {
-    margin-right: 20px;
+    position: relative;
+    left: -100px;
   }
   #embedmap {
     width: 350px !important;
@@ -1121,10 +1129,17 @@ hr {
     margin: 5px 30px 25px 0;
   }
   .checkout {
-    margin: 0 0 0 30px;
+    margin: 0;
+    position: relative;
+    top: 15px;
+  }
+  input[type="submit"]{
+    position: relative;
+    left: 0;
   }
   .cancel {
-    margin: 0;
+    position: relative;
+    left: -100px;
   }
   .about-list {
     display: inline-flex;
