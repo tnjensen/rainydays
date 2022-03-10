@@ -1,6 +1,7 @@
 const cartItems = JSON.parse(localStorage.getItem("cartList"));
 const cartContainer = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
+const cancelButton = document.querySelector('.cancel');
 
 let total = 0;
 cartItems.forEach(function(cartElement){
@@ -12,4 +13,12 @@ cartItems.forEach(function(cartElement){
         </div>
     `
 })
+cancelButton.onclick = cancelPurchase;
+
+function cancelPurchase(){
+    cartContainer.innerHTML = "";
+    localStorage.removeItem("cartList");
+    window.location.href = "checkout.html";
+}
 totalContainer.innerHTML = `Total: $${total}`;
+
