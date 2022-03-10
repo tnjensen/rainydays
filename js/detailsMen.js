@@ -52,8 +52,7 @@ function showCart(cartItems){
         `<div class="cart-item">
             <h4>${cartElement.name}</h4>
             <img src="${cartElement.image}" class="cart-image"></div>
-        </div>
-        `
+        </div>`
     })
     totalContainer.innerHTML = `Total: $${total}`;
 }

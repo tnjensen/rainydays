@@ -613,7 +613,7 @@ input:focus:-moz-placeholder {
 }
 .cancel {
   position: relative;
-  left: -30px;
+  left: -100px;
   top: -30px;
   background-color: #1fa9cc;
   color: #fffefe;
@@ -979,7 +979,7 @@ hr {
   }
   .cancel {
     position: relative;
-    left: -100px;
+    left: -180px;
   }
   #embedmap {
     width: 350px !important;
@@ -1135,7 +1135,7 @@ hr {
   }
   .cancel {
     position: relative;
-    left: -100px;
+    left: -180px;
   }
   .about-list {
     display: inline-flex;
