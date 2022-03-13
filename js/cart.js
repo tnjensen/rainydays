@@ -18,7 +18,6 @@ if(localStorage.getItem("cartList") !== null){
     totalContainer.innerHTML = `Total: $${total}`;
 }
 
-
 removeButton.onclick = cancelPurchase;
 
 function cancelPurchase(){

@@ -452,6 +452,10 @@ input:focus:-moz-placeholder {
 .cart-item img{
   max-width: 70px;
 }
+.fa-trash{
+  margin-left: 20px;
+  font-size: 1.5em;
+}
 .checkout-btn.cta-small {
   position: relative;
   top: 5px;

@@ -7,7 +7,9 @@ const product = mensProducts.find(({id}) => id == productId);
 const cart = document.querySelector(".cart");
 const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
-let cartArray = []; 
+let cartArray = [];
+let counter = 1;
+const checkoutButton = document.querySelector('.checkout-btn');
 
 productContainer.innerHTML = `<h1>${product.name}</h1>
 <p class="product-description">${product.description}</p>      
@@ -31,28 +33,60 @@ productContainer.innerHTML = `<h1>${product.name}</h1>
         </div>
     </div>`
 
-    const button = document.querySelector(".addcart");
+const button = document.querySelector(".addcart");
 
-    button.onclick = function(event){
-        //const itemToAdd = mensProducts.find(item => productId === event.target.dataset.product);
-        const itemToAdd = product;
-        //console.log(product);
-        cartArray.push(itemToAdd);
-        showCart(cartArray);
-        localStorage.setItem("cartList", JSON.stringify(cartArray));
-    }
+button.onclick = function(event){
+    //const itemToAdd = mensProducts.find(item => productId === event.target.dataset.product);
+    const itemToAdd = product;
+    //console.log(product);
+    cartArray.push(itemToAdd);
+    showCart(cartArray);
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
+}
+
 
 function showCart(cartItems){
     cart.style.display = "flex";
     cartList.innerHTML = "";
+    counter = 1;
     let total = 0;
-    cartItems.forEach(function(cartElement){
+    let newCartList = "";
+    cartArray.forEach((cartElement,index) => {
         total += cartElement.price;
-        cartList.innerHTML += 
-        `<div class="cart-item">
-            <h4>${cartElement.name}</h4>
-            <img src="${cartElement.image}" class="cart-image"></div>
-        </div>`
+    newCartList +=
+    `<div class="cart-item">
+    <div class="count">${counter}</div>
+    <h4>${cartElement.name}</h4>
+    <div class="cart-image" style="background-image: url(${cartElement.image})" alt="${cartElement.name}"></div>
+    <div>
+    <!--<button class="plus"><i class="fa fa-plus"></i></button>
+    <button class="minus"><i class="fa fa-minus"></i></button></div>-->       
+    <span><i class="fa fa-trash" data-item=${index}"></i></span>
+    </div>
+    `
     })
-    totalContainer.innerHTML = `Total: $${total}`;
+    if(cartItems){
+    cartList.innerHTML = newCartList;
+}
+    const trashCans = document.querySelectorAll('span i');
+
+    trashCans.forEach(function(index){
+        index.addEventListener('click', deleteItem);
+    })
+    
+    totalContainer.innerHTML = "Total: $" + total;
+} 
+function deleteItem(index){
+    let getLocalStorageData = localStorage.getItem("cartList");
+    if(cartArray.length !== null){
+    cartArray = JSON.parse(getLocalStorageData); 
+    cartArray.splice(index, 1); //delete the index
+    localStorage.setItem("cartList", JSON.stringify(cartArray));
+    
+    showCart(cartArray);
+    }
+    if(cartArray.length === 0){
+       checkoutButton.href = "men.html";
+       checkoutButton.textContent = `Continue shopping`;    
+    }
 }
