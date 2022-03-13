@@ -435,6 +435,7 @@ input:focus:-moz-placeholder {
   background: #fff;
   flex-direction: column;
   display: none;
+  z-index: 10;
 }
 .cart-image{
   max-width: 50px;
