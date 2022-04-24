@@ -1,4 +1,5 @@
-import { womensProducts } from "./womens.js";
+/* import { womensProducts } from "./womens.js"; */
+const url = 'https://noroff.tnjensen.com/rainydays_headless/wp-json/wc/store/products/';
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const productId = params.get("id");
@@ -11,39 +12,55 @@ let cartArray = [];
 let counter = 1;
 const checkoutButton = document.querySelector('.checkout-btn');
 
-productContainer.innerHTML = `<h1>${product.name}</h1>
-<p class="product-description">${product.description}</p>      
-<div class="product-detail-item">
-    <div class="icons-aside">
-    <img src="../images/Icon awesome-skiing.svg" alt="Downhill skier icon">
-    <img src="../images/Icon map-cross-country-skiing.svg" alt="cross country skier icon">
-    <img src="../images/Icon awesome-hiking.svg" alt="Hiking person icon">
-    <img src="../images/Icon ionic-ios-bicycle.svg" alt="Cycling person icon">
-    </div>
-    <img src="${product.image}" alt="Illustration of female raincoat">
-    <div class="detail-aside">
-        <p>Rating, store</p>
-        <p>Article No.</p>
-        <h2>Price: $${product.price}</h2>
-        <div class="detail-counter-aside">
-        <button class="counter-minus-btn"><h2>-</h2></button>
-        <h2 class="counter">1</h2>
-        <button class="counter-plus-btn"><h2>+</h2></button>
-        </div>
-        <div>
-        <button class="addcart cta-small" data-product="${productId}">Add to Cart</button>
-        </div>
-    </div>`
-
-    const button = document.querySelector(".addcart");
-
-    button.onclick = function(event){
-        const itemToAdd = womensProducts.find(item => productId === event.target.dataset.product);
-        //console.log(event.target.dataset.product);
-        cartArray.push(itemToAdd);
-        showCart(cartArray);
-        localStorage.setItem("cartList", JSON.stringify(cartArray));
+async function getProduct(){
+    try{
+        let response = await fetch(url + productId);
+        let result = await response.json();
+        createHTML(result); 
     }
+    catch(error){
+        console.log(error);
+        
+    }
+}
+getProduct();
+
+function createHTML(product){
+    console.log(product);
+        productContainer.innerHTML = `<h1>${product.name}</h1>
+        <p class="product-description">${product.description}</p>      
+        <div class="product-detail-item">
+            <div class="icons-aside">
+                <img src="../images/Icon awesome-skiing.svg" alt="Downhill skier icon">
+                <img src="../images/Icon map-cross-country-skiing.svg" alt="cross country skier icon">
+                <img src="../images/Icon awesome-hiking.svg" alt="Hiking person icon">
+                <img src="../images/Icon ionic-ios-bicycle.svg" alt="Cycling person icon">
+            </div>
+            <img src="${product.images[0].src}" alt="Illustration of male raincoat">
+            <div class="detail-aside">
+                <h2>Price: NOK ${product.prices.price}</h2>
+                <div class="detail-counter-aside">
+                <button class="counter-minus-btn"><h2>-</h2></button>
+                <h2 class="counter">1</h2>
+                <button class="counter-plus-btn"><h2>+</h2></button>
+                </div>
+                <div>
+                <button class="addcart cta-small" data-product="${productId}">Add to Cart</button>
+                </div>
+            </div>`
+        
+        const button = document.querySelector(".addcart");
+        
+        button.onclick = function(event){
+            //const itemToAdd = mensProducts.find(item => productId === event.target.dataset.product);
+            const itemToAdd = product;
+            //console.log(product);
+            cartArray.push(itemToAdd);
+            showCart(cartArray);
+            localStorage.setItem("cartList", JSON.stringify(cartArray));
+        }
+}
+
 
     function showCart(cartItems){
         cart.style.display = "flex";
@@ -52,7 +69,7 @@ productContainer.innerHTML = `<h1>${product.name}</h1>
         let total = 0;
         let newCartList = "";
         cartArray.forEach((cartElement,index) => {
-            total += cartElement.price;
+            total += cartElement.prices.price;
         newCartList +=
         `<div class="cart-item">
         <div class="count">${counter}</div>
@@ -74,7 +91,7 @@ productContainer.innerHTML = `<h1>${product.name}</h1>
             index.addEventListener('click', deleteItem);
         })
         
-        totalContainer.innerHTML = "Total: $" + total;
+        totalContainer.innerHTML = "Total: NOK" + total;
     } 
     function deleteItem(index){
         let getLocalStorageData = localStorage.getItem("cartList");

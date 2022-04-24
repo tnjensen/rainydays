@@ -7,15 +7,15 @@ const removeButton = document.querySelector('.remove-btn');
 let total = 0;
 if(localStorage.getItem("cartList") !== null){
     cartItems.forEach(function(cartElement){
-        total += cartElement.price;
+        total = cartElement.prices.price;
         cartContainer.innerHTML +=         
         `<div class="cart-item">
-            <img src="${cartElement.image}" class="cart-image" />
+            <img src="${cartElement.images[0].src}" class="cart-image" />
             <h4>${cartElement.name}</h4>
             </div>`
     })
     removeButton.innerHTML = `<button class="remove cta-small">Remove</button>`;
-    totalContainer.innerHTML = `Total: $${total}`;
+    totalContainer.innerHTML = `Total: NOK ${total}`;
 }
 
 removeButton.onclick = cancelPurchase;
