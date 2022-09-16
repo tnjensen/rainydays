@@ -40,7 +40,5 @@ https://inspiring-knuth-5b8d92.netlify.app/index.html
 
 ## Contact
 
-[My Twitter page](https://twitter.com/ThomasNJensen1)
-
 [My LinkedIn page](https://www.linkedin.com/in/tnjensen09/)
 
