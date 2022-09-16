@@ -23,7 +23,7 @@ To clone the project and get it started, please follow these steps:
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/tnjensen/rainydays.git
 ```
 
 2. Install the dependencies:
