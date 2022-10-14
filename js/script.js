@@ -1,6 +1,15 @@
 var links = document.querySelector('nav a [href="'+document.URL+'"]');
 const dropItem = document.querySelectorAll('.has-dropdown');
 const menuBtn = document.querySelector('.menu-icon');
+const year = document.querySelector('#year');
+const createdYear = 2021; 
+
+let date = new Date().getFullYear();
+if( date > createdYear){
+  year.innerHTML =  `${createdYear} - ` + date;
+}else{
+  year.innerHTML = date;
+}
 
 for (var i = 0; i < document.links.length; i++) {
     if (document.links[i].href == document.URL) {
